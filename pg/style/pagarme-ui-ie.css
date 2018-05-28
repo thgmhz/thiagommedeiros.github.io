@@ -1,0 +1,16 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  #pagarme-checkout-card-container .card .back {
+    display: none; }
+  #pagarme-checkout-card-container .card .front {
+    display: block; }
+  #pagarme-checkout-card-container .card .front,
+  #pagarme-checkout-card-container .card .back {
+    backface-visibility: visible; }
+  #pagarme-checkout-card-container .card.flipped .back {
+    display: block; }
+  #pagarme-checkout-card-container .card.flipped .front {
+    display: none; }
+  #pagarme-checkout-card-container .card.flipped.amex .back {
+    display: none; }
+  #pagarme-checkout-card-container .card.flipped.amex .front {
+    display: block; } }

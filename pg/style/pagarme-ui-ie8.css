@@ -1,0 +1,47 @@
+#pagarme-checkout-ui {
+  background-color: #000; }
+
+#pagarme-modal-box input.placeholder {
+  color: #aaa; }
+
+#pagarme-modal-box .pretty-select-container select {
+  position: absolute;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha" Opacity=100;
+  -o-opacity: 1;
+  opacity: 1;
+  font-size: 20px;
+  line-height: 80px;
+  vertical-align: middle; }
+
+.pagarme-checkout-step.hidden {
+  display: none; }
+  .pagarme-checkout-step.hidden * {
+    display: none; }
+
+#pagarme-checkout-card-container .card .back {
+  display: none; }
+
+#pagarme-checkout-card-container .card .front {
+  display: block; }
+
+#pagarme-checkout-card-container .card.flipped .back {
+  display: block; }
+
+#pagarme-checkout-card-container .card.flipped .front {
+  display: none; }
+
+#pagarme-checkout-card-container .card.flipped.amex .back {
+  display: none; }
+
+#pagarme-checkout-card-container .card.flipped.amex .front {
+  display: block; }
+
+#pagarme-modal-box-step-credit-card-information {
+  overflow: visible;
+  width: 480px; }
+
+#pagarme-checkout-footer #pagarme-checkout-pagarme-brand {
+  margin-right: 25px; }

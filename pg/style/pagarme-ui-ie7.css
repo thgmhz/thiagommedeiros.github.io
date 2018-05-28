@@ -1,0 +1,31 @@
+#pagarme-checkout-step-indicator {
+  display: inline;
+  zoom: 1; }
+  #pagarme-checkout-step-indicator li {
+    display: inline;
+    zoom: 1; }
+
+#pagarme-modal-box button {
+  line-height: 2.5em; }
+  #pagarme-modal-box button span {
+    position: absolute;
+    right: 15px; }
+
+.pagarme-checkout-step {
+  display: block; }
+  .pagarme-checkout-step.hidden {
+    display: none; }
+    .pagarme-checkout-step.hidden * {
+      display: none; }
+
+#pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container .pretty-select-container {
+  position: static; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container .pretty-select-container select,
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container .pretty-select-container img {
+    position: static; }
+
+#pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container.has-installments .pretty-select-container {
+  position: absolute; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container.has-installments .pretty-select-container select,
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container.has-installments .pretty-select-container img {
+    position: absolute; }

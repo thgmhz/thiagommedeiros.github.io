@@ -1,0 +1,213 @@
+#pagarme-checkout-card-container {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  width: 387px;
+  height: 246px;
+  margin-bottom: 6px;
+  position: relative;
+  z-index: 1;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-perspective: 1000px;
+  -o-perspective: 1000px;
+  perspective: 1000px; }
+  #pagarme-checkout-card-container .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+    color: #fff;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 0.35s ease-out;
+    -moz-transition: all 0.35s ease-out;
+    -o-transition: all 0.35s ease-out;
+    -ms-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out; }
+    #pagarme-checkout-card-container .card * {
+      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.75); }
+    #pagarme-checkout-card-container .card.flipped {
+      -webkit-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      transform: rotateY(180deg); }
+    #pagarme-checkout-card-container .card.visa .front {
+      background-image: url("../images/visa-card-bg.png"); }
+    #pagarme-checkout-card-container .card.visa .back {
+      background-image: url("../images/visa-back-bg.png"); }
+    #pagarme-checkout-card-container .card.mastercard .front {
+      background-image: url("../images/mastercard-card-bg.png"); }
+    #pagarme-checkout-card-container .card.mastercard .back {
+      background-image: url("../images/mastercard-back-bg.png"); }
+    #pagarme-checkout-card-container .card.diners .front {
+      background-image: url("../images/diners-card-bg.png"); }
+    #pagarme-checkout-card-container .card.jcb .front {
+      background-image: url("../images/jcb-card-bg.png"); }
+    #pagarme-checkout-card-container .card.hipercard .front {
+      background-image: url("../images/hipercard-card-bg.png"); }
+    #pagarme-checkout-card-container .card.discover .front {
+      background-image: url("../images/discover-card-bg.png"); }
+    #pagarme-checkout-card-container .card.aura .front {
+      background-image: url("../images/aura-card-bg.png"); }
+    #pagarme-checkout-card-container .card.elo .front {
+      background-image: url("../images/elo-card-bg.png"); }
+    #pagarme-checkout-card-container .card.amex.flipped {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; }
+    #pagarme-checkout-card-container .card.amex .front {
+      background-image: url("../images/amex-card-bg.png"); }
+      #pagarme-checkout-card-container .card.amex .front .field.amex {
+        display: block;
+        visibility: visible; }
+      #pagarme-checkout-card-container .card.amex .front .field.general {
+        display: none;
+        visibility: hidden;
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+        -webkit-opacity: 0;
+        -moz-opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha" Opacity=0;
+        -o-opacity: 0;
+        opacity: 0; }
+    #pagarme-checkout-card-container .card .front, #pagarme-checkout-card-container .card .back {
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -o-border-radius: 6px;
+      -ms-border-radius: 6px;
+      border-radius: 6px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+    #pagarme-checkout-card-container .card .field {
+      position: absolute;
+      filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+      -webkit-opacity: 0.3;
+      -moz-opacity: 0.3;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha" Opacity=30;
+      -o-opacity: 0.3;
+      opacity: 0.3;
+      -webkit-transition: all 0.35s ease-out;
+      -moz-transition: all 0.35s ease-out;
+      -o-transition: all 0.35s ease-out;
+      -ms-transition: all 0.35s ease-out;
+      transition: all 0.35s ease-out;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      cursor: default; }
+      #pagarme-checkout-card-container .card .field.general {
+        display: block;
+        visibility: visible; }
+      #pagarme-checkout-card-container .card .field.amex {
+        display: none;
+        visibility: hidden;
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+        -webkit-opacity: 1;
+        -moz-opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha" Opacity=100;
+        -o-opacity: 1;
+        opacity: 1;
+        color: #82a4a5; }
+        #pagarme-checkout-card-container .card .field.amex.cvv {
+          left: 310px;
+          bottom: 136px; }
+        #pagarme-checkout-card-container .card .field.amex.name {
+          left: 45px;
+          bottom: 20px;
+          font-size: 15px; }
+        #pagarme-checkout-card-container .card .field.amex.number {
+          left: 0;
+          bottom: 95px;
+          font-weight: normal;
+          letter-spacing: 3px;
+          width: 100%;
+          text-align: center;
+          font-size: 22px; }
+        #pagarme-checkout-card-container .card .field.amex.expiration-label {
+          bottom: 70px;
+          left: 45px;
+          width: 100px;
+          text-align: left; }
+        #pagarme-checkout-card-container .card .field.amex.expiration {
+          bottom: 51px;
+          left: 45px;
+          font-size: 14px;
+          font-weight: 400; }
+        #pagarme-checkout-card-container .card .field.amex.focused {
+          color: #fff; }
+      #pagarme-checkout-card-container .card .field.focused {
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+        -webkit-opacity: 1;
+        -moz-opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha" Opacity=100;
+        -o-opacity: 1;
+        opacity: 1; }
+    #pagarme-checkout-card-container .card .front {
+      background-image: url("../images/default-card-bg.png");
+      -webkit-transition: background-image 0.20s ease-out;
+      -moz-transition: background-image 0.20s ease-out;
+      -o-transition: background-image 0.20s ease-out;
+      -ms-transition: background-image 0.20s ease-out;
+      transition: background-image 0.20s ease-out; }
+      #pagarme-checkout-card-container .card .front .name, #pagarme-checkout-card-container .card .front .number {
+        font-size: 19px; }
+      #pagarme-checkout-card-container .card .front .number, #pagarme-checkout-card-container .card .front .expiration {
+        font-weight: bold; }
+      #pagarme-checkout-card-container .card .front .name {
+        overflow: hidden;
+        width: 250px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: absolute;
+        bottom: 62px;
+        left: 30px;
+        text-transform: uppercase; }
+      #pagarme-checkout-card-container .card .front .number {
+        position: absolute;
+        left: 30px;
+        bottom: 95px; }
+      #pagarme-checkout-card-container .card .front .expiration {
+        bottom: 29px;
+        left: 77px;
+        font-size: 17px; }
+      #pagarme-checkout-card-container .card .front .expiration-label {
+        position: absolute;
+        bottom: 26px;
+        left: 30px;
+        text-transform: uppercase;
+        width: 36px;
+        text-align: right;
+        font-size: 11px; }
+    #pagarme-checkout-card-container .card .back {
+      -webkit-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+      background-image: url("../images/card-back-bg.png"); }
+      #pagarme-checkout-card-container .card .back .cvv {
+        -webkit-transition: all 0.35s 0.45s ease-out;
+        -moz-transition: all 0.35s 0.45s ease-out;
+        -o-transition: all 0.35s 0.45s ease-out;
+        -ms-transition: all 0.35s 0.45s ease-out;
+        transition: all 0.35s 0.45s ease-out;
+        position: absolute;
+        top: 100px;
+        left: 318px;
+        color: #141414;
+        text-shadow: none; }

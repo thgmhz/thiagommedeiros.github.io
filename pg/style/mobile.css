@@ -1,0 +1,298 @@
+.mobile {
+  display: block; }
+
+.no-mobile {
+  display: none; }
+
+.mobile-capitalized {
+  text-transform: capitalize; }
+
+#pagarme-checkout-back-link,
+#pagarme-checkout-close-link {
+  display: inline-block;
+  width: 30px; }
+
+#pagarme-checkout-back-link span.no-mobile {
+  display: none; }
+
+#pagarme-checkout-close-link {
+  font-size: 25px;
+  text-align: right; }
+
+#pagarme-checkout-footer {
+  font-size: 8px; }
+
+#pagarme-checkout-step-title {
+  margin: 0 0 10px;
+  font-size: 22px; }
+
+.pagarme-checkout-step-indicator {
+  margin: 0;
+  padding: 0;
+  margin-top: -20px;
+  padding-top: 25px;
+  line-height: 10px;
+  height: 16px; }
+  .pagarme-checkout-step-indicator.no-mobile {
+    display: none; }
+  .pagarme-checkout-step-indicator.mobile {
+    display: inline-block; }
+  .pagarme-checkout-step-indicator li {
+    height: 10px;
+    line-height: 10px; }
+
+#pagarme-checkout-ui {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+#pagarme-modal-box {
+  width: 90%;
+  margin-bottom: 15px; }
+  #pagarme-modal-box button {
+    width: 100%;
+    box-sizing: border-box; }
+  #pagarme-modal-box .pagarme-checkout-input-container {
+    width: 100%;
+    box-sizing: border-box; }
+    #pagarme-modal-box .pagarme-checkout-input-container .brand-icon {
+      position: absolute;
+      display: block;
+      right: -44px;
+      top: 50%;
+      margin-top: -15px;
+      width: 44px;
+      height: 30px;
+      -webkit-transition: right 0.25s ease-out;
+      -moz-transition: right 0.25s ease-out;
+      -o-transition: right 0.25s ease-out;
+      -ms-transition: right 0.25s ease-out;
+      transition: right 0.25s ease-out; }
+    #pagarme-modal-box .pagarme-checkout-input-container.brand-display.amex .brand-icon, #pagarme-modal-box .pagarme-checkout-input-container.brand-display.aura .brand-icon, #pagarme-modal-box .pagarme-checkout-input-container.brand-display.diners .brand-icon, #pagarme-modal-box .pagarme-checkout-input-container.brand-display.discover .brand-icon, #pagarme-modal-box .pagarme-checkout-input-container.brand-display.elo .brand-icon, #pagarme-modal-box .pagarme-checkout-input-container.brand-display.hipercard .brand-icon, #pagarme-modal-box .pagarme-checkout-input-container.brand-display.jcb .brand-icon, #pagarme-modal-box .pagarme-checkout-input-container.brand-display.mastercard .brand-icon, #pagarme-modal-box .pagarme-checkout-input-container.brand-display.visa .brand-icon {
+      right: 10px; }
+    #pagarme-modal-box .pagarme-checkout-input-container.brand-display.amex .brand-icon {
+      background-image: url("../images/icon-bandeira-amex.png"); }
+    #pagarme-modal-box .pagarme-checkout-input-container.brand-display.aura .brand-icon {
+      background-image: url("../images/icon-bandeira-aura.png"); }
+    #pagarme-modal-box .pagarme-checkout-input-container.brand-display.diners .brand-icon {
+      background-image: url("../images/icon-bandeira-diners.png"); }
+    #pagarme-modal-box .pagarme-checkout-input-container.brand-display.discover .brand-icon {
+      background-image: url("../images/icon-bandeira-discover.png"); }
+    #pagarme-modal-box .pagarme-checkout-input-container.brand-display.elo .brand-icon {
+      background-image: url("../images/icon-bandeira-elo.png"); }
+    #pagarme-modal-box .pagarme-checkout-input-container.brand-display.hipercard .brand-icon {
+      background-image: url("../images/icon-bandeira-hipercard.png"); }
+    #pagarme-modal-box .pagarme-checkout-input-container.brand-display.jcb .brand-icon {
+      background-image: url("../images/icon-bandeira-jcb.png"); }
+    #pagarme-modal-box .pagarme-checkout-input-container.brand-display.mastercard .brand-icon {
+      background-image: url("../images/icon-bandeira-mastercard.png"); }
+    #pagarme-modal-box .pagarme-checkout-input-container.brand-display.visa .brand-icon {
+      background-image: url("../images/icon-bandeira-visa.png"); }
+    #pagarme-modal-box .pagarme-checkout-input-container.brand-display.pagarme-success .pagarme-checkout-success-mark {
+      display: none; }
+    #pagarme-modal-box .pagarme-checkout-input-container.brand-display.pagarme-error .brand-icon {
+      right: -44px; }
+
+.pagarme-checkout-step {
+  width: 100%; }
+
+#pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container {
+  margin-right: 2%;
+  float: left;
+  width: 58%;
+  box-sizing: border-box; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container .pretty-select-container {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container .pretty-select-container span {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.pagarme-success input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.pagarme-error input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.pagarme-error .pretty-select-container {
+    width: 100%;
+    padding-right: 50px; }
+
+#pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container {
+  float: left;
+  width: 40%;
+  box-sizing: border-box; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container .pretty-select-container {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container .pretty-select-container span {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.pagarme-success input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.pagarme-error input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.pagarme-error .pretty-select-container {
+    width: 100%;
+    padding-right: 50px; }
+
+#pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.has-installments {
+  margin-right: 2%;
+  float: left;
+  width: 58%;
+  box-sizing: border-box; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.has-installments input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.has-installments .pretty-select-container {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.has-installments .pretty-select-container span {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.has-installments.pagarme-success input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.has-installments.pagarme-success .pretty-select-container, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.has-installments.pagarme-error input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.has-installments.pagarme-error .pretty-select-container {
+    width: 100%;
+    padding-right: 50px; }
+
+#pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.has-installments {
+  margin-right: 0;
+  float: left;
+  width: 40%;
+  box-sizing: border-box; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.has-installments input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.has-installments .pretty-select-container {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.has-installments .pretty-select-container span {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.has-installments.pagarme-success input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.has-installments.pagarme-success .pretty-select-container, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.has-installments.pagarme-error input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.has-installments.pagarme-error .pretty-select-container {
+    width: 100%;
+    padding-right: 50px; }
+
+#pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container {
+  float: left;
+  width: 100%;
+  box-sizing: border-box; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container .pretty-select-container {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container .pretty-select-container span {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container.pagarme-success input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container.pagarme-error input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container.pagarme-error .pretty-select-container {
+    width: 100%;
+    padding-right: 50px; }
+
+#pagarme-modal-box-step-buyer-information #pagarme-checkout-ddd-field-container {
+  margin-right: 2%;
+  float: left;
+  width: 30%;
+  box-sizing: border-box; }
+  #pagarme-modal-box-step-buyer-information #pagarme-checkout-ddd-field-container input, #pagarme-modal-box-step-buyer-information #pagarme-checkout-ddd-field-container .pretty-select-container {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-buyer-information #pagarme-checkout-ddd-field-container .pretty-select-container span {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-buyer-information #pagarme-checkout-ddd-field-container.pagarme-success input, #pagarme-modal-box-step-buyer-information #pagarme-checkout-ddd-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-buyer-information #pagarme-checkout-ddd-field-container.pagarme-error input, #pagarme-modal-box-step-buyer-information #pagarme-checkout-ddd-field-container.pagarme-error .pretty-select-container {
+    width: 100%;
+    padding-right: 50px; }
+
+#pagarme-modal-box-step-buyer-information #pagarme-checkout-phone-number-field-container {
+  float: left;
+  width: 68%;
+  box-sizing: border-box; }
+  #pagarme-modal-box-step-buyer-information #pagarme-checkout-phone-number-field-container input, #pagarme-modal-box-step-buyer-information #pagarme-checkout-phone-number-field-container .pretty-select-container {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-buyer-information #pagarme-checkout-phone-number-field-container .pretty-select-container span {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-buyer-information #pagarme-checkout-phone-number-field-container.pagarme-success input, #pagarme-modal-box-step-buyer-information #pagarme-checkout-phone-number-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-buyer-information #pagarme-checkout-phone-number-field-container.pagarme-error input, #pagarme-modal-box-step-buyer-information #pagarme-checkout-phone-number-field-container.pagarme-error .pretty-select-container {
+    width: 100%;
+    padding-right: 50px; }
+
+#pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-street-field-container {
+  margin-right: 2%;
+  float: left;
+  width: 66%;
+  box-sizing: border-box; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-street-field-container input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-street-field-container .pretty-select-container {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-street-field-container .pretty-select-container span {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-street-field-container.pagarme-success input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-street-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-street-field-container.pagarme-error input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-street-field-container.pagarme-error .pretty-select-container {
+    width: 100%;
+    padding-right: 50px; }
+
+#pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-number-field-container {
+  float: left;
+  width: 32%;
+  box-sizing: border-box; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-number-field-container input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-number-field-container .pretty-select-container {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-number-field-container .pretty-select-container span {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-number-field-container.pagarme-success input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-number-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-number-field-container.pagarme-error input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-number-field-container.pagarme-error .pretty-select-container {
+    width: 100%;
+    padding-right: 50px; }
+
+#pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-complementary-field-container {
+  margin-right: 2%;
+  float: left;
+  width: 56%;
+  box-sizing: border-box; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-complementary-field-container input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-complementary-field-container .pretty-select-container {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-complementary-field-container .pretty-select-container span {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-complementary-field-container.pagarme-success input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-complementary-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-complementary-field-container.pagarme-error input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-complementary-field-container.pagarme-error .pretty-select-container {
+    width: 100%;
+    padding-right: 50px; }
+
+#pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-neighborhood-field-container {
+  float: left;
+  width: 42%;
+  box-sizing: border-box; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-neighborhood-field-container input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-neighborhood-field-container .pretty-select-container {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-neighborhood-field-container .pretty-select-container span {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-neighborhood-field-container.pagarme-success input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-neighborhood-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-neighborhood-field-container.pagarme-error input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-neighborhood-field-container.pagarme-error .pretty-select-container {
+    width: 100%;
+    padding-right: 50px; }
+
+#pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-city-field-container {
+  margin-right: 2%;
+  float: left;
+  width: 66%;
+  box-sizing: border-box; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-city-field-container input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-city-field-container .pretty-select-container {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-city-field-container .pretty-select-container span {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-city-field-container.pagarme-success input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-city-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-city-field-container.pagarme-error input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-city-field-container.pagarme-error .pretty-select-container {
+    width: 100%;
+    padding-right: 50px; }
+
+#pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-state-field-container {
+  float: left;
+  width: 32%;
+  box-sizing: border-box; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-state-field-container input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-state-field-container .pretty-select-container {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-state-field-container .pretty-select-container span {
+    box-sizing: border-box;
+    width: 100%; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-state-field-container.pagarme-success input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-state-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-state-field-container.pagarme-error input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-state-field-container.pagarme-error .pretty-select-container {
+    width: 100%;
+    padding-right: 50px; }
+
+#pagarme-modal-box-step-choose-method button {
+  box-sizing: border-box;
+  width: 100%; }
+
+#pagarme-modal-box-step-choose-method div {
+  box-sizing: border-box;
+  width: 100%; }
+
+#pagarme-checkout-card-container {
+  display: none; }

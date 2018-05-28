@@ -1,0 +1,873 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body:after {
+  display: none;
+  content: url("../images/amex-card-bg.png") url("../images/default-card-bg.png") url("../images/jcb-card-bg.png") url("../images/diners-card-bg.png") url("../images/discover-card-bg.png") url("../images/elo-card-bg.png") url("../images/hipercard-card-bg.png") url("../images/mastercard-card-bg.png") url("../images/visa-card-bg.png") url("../images/card-back-bg.png") url("../images/mastercard-back-bg.png") url("../images/visa-back-bg.png") url("../images/icon-bandeira-amex.png") url("../images/icon-bandeira-aura.png") url("../images/icon-bandeira-diners.png") url("../images/icon-bandeira-discover.png") url("../images/icon-bandeira-elo.png") url("../images/icon-bandeira-hipercard.png") url("../images/icon-bandeira-jcb.png") url("../images/icon-bandeira-mastercard.png") url("../images/transaction-success.png"); }
+
+a,
+a:link,
+a:hover,
+a:active {
+  text-decoration: none; }
+
+:invalid,
+:-moz-ui-invalid,
+:-moz-submit-invalid {
+  box-shadow: none; }
+
+b {
+  font-weight: 800; }
+
+.clearfix {
+  clear: both; }
+
+.spinning {
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  -ms-animation: spin 2s linear infinite;
+  -o-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite; }
+
+.brand-color {
+  color: #1a6ee1; }
+
+.brand-border-color {
+  border-color: #458ae9; }
+
+.brand-background-color {
+  background-color: #1a6ee1; }
+  .brand-background-color.darker-hover:hover {
+    background-color: #1558b3; }
+
+.no-mobile {
+  display: initial; }
+
+.mobile {
+  display: none; }
+
+.spinner {
+  height: 22px;
+  width: 22px;
+  position: relative;
+  -webkit-animation: rotation .6s infinite linear;
+  -moz-animation: rotation .6s infinite linear;
+  -o-animation: rotation .6s infinite linear;
+  animation: rotation .6s infinite linear;
+  border-left: 6px solid rgba(255, 255, 255, 0.15);
+  border-right: 6px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 6px solid rgba(255, 255, 255, 0.15);
+  border-top: 6px solid rgba(255, 255, 255, 0.8);
+  border-radius: 100%; }
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(359deg); } }
+
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(359deg); } }
+
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg); }
+  to {
+    -o-transform: rotate(359deg); } }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg); } }
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@-o-keyframes spin {
+  100% {
+    -o-transform: rotate(360deg); } }
+
+@-ms-keyframes spin {
+  100% {
+    -ms-transform: rotate(360deg); } }
+
+::-webkit-input-placeholder {
+  color: #aaa;
+  opacity: 1; }
+
+::-moz-placeholder {
+  color: #aaa;
+  opacity: 1; }
+
+/* firefox 19+ */
+:-ms-input-placeholder {
+  color: #aaa;
+  opacity: 1; }
+
+/* ie */
+input:-moz-placeholder {
+  color: #aaa;
+  opactiy: 1; }
+
+.error-message {
+  text-align: center;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25em; }
+  .error-message span {
+    color: #f8f794; }
+
+#pagarme-checkout-ui {
+  opacity: 0;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  z-index: 999998;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  top: 0;
+  left: 0;
+  -webkit-overflow-scrolling: touch;
+  transform: translateZ(0); }
+  #pagarme-checkout-ui * {
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px; }
+
+#pagarme-checkout-header {
+  position: relative;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  #pagarme-checkout-header a {
+    color: #707070;
+    display: block;
+    float: left;
+    padding: 25px; }
+  #pagarme-checkout-header #pagarme-checkout-back-link {
+    font-size: 12px; }
+    #pagarme-checkout-header #pagarme-checkout-back-link span {
+      display: inline-block; }
+    #pagarme-checkout-header #pagarme-checkout-back-link .icon-pg-checkout-back {
+      margin-right: 7px;
+      font-size: 25px;
+      vertical-align: middle; }
+  #pagarme-checkout-header .icon-pg-checkout-close {
+    font-size: 25px; }
+  #pagarme-checkout-header #pagarme-checkout-close-link {
+    float: right; }
+
+#pagarme-checkout-footer {
+  font-size: 13px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; }
+  #pagarme-checkout-footer p {
+    color: #707070;
+    float: left; }
+  #pagarme-checkout-footer #pagarme-checkout-pagarme-brand {
+    float: right; }
+    #pagarme-checkout-footer #pagarme-checkout-pagarme-brand .icon-pg-checkout-pagarme-logo {
+      display: inline-block;
+      margin-left: 10px;
+      font-size: 25px;
+      vertical-align: middle; }
+  #pagarme-checkout-footer a,
+  #pagarme-checkout-footer a:link,
+  #pagarme-checkout-footer a:hover,
+  #pagarme-checkout-footer a:active,
+  #pagarme-checkout-footer a:visited {
+    color: #707070; }
+
+@media screen and (min-width: 1025px) {
+  #pagarme-checkout-footer,
+  #pagarme-checkout-header {
+    position: fixed; }
+  #footer-container {
+    padding: 0 25px 25px; }
+  #pagarme-modal-box {
+    margin: 80px auto 0; } }
+
+@media screen and (max-width: 1024px) {
+  #pagarme-modal-box {
+    margin: 20px auto 0; }
+  #pagarme-checkout-footer {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto 350px; }
+    #pagarme-checkout-footer #pagarme-checkout-secure-connection,
+    #pagarme-checkout-footer #pagarme-checkout-pagarme-brand {
+      float: none;
+      text-align: center;
+      font-size: 11px;
+      margin-bottom: 5px; }
+    #pagarme-checkout-footer #pagarme-checkout-pagarme-brand .icon-pg-checkout-pagarme-logo {
+      font-size: 24px; }
+    #pagarme-checkout-footer #pagarme-checkout-pagarme-brand span.no-mobile {
+      display: none; }
+  #pagarme-checkout-header {
+    height: 45px; } }
+
+#pagarme-modal-loading {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute; }
+  #pagarme-modal-loading .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -11px;
+    margin-left: -11px; }
+
+#pagarme-checkout-step-title {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+  margin: 30px 0 20px; }
+
+#pagarme-checkout-amount-information {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #fff;
+  margin: 0 0 25px;
+  font-size: 16px; }
+
+.pagarme-checkout-step-indicator {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 39px;
+  margin: -5px auto 20px;
+  overflow: hidden;
+  display: none; }
+  .pagarme-checkout-step-indicator.show {
+    display: inline-block; }
+  .pagarme-checkout-step-indicator.mobile {
+    display: none; }
+  .pagarme-checkout-step-indicator li {
+    cursor: pointer;
+    height: 36px;
+    text-decoration: none;
+    color: #3b3b3b;
+    font-size: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 2px;
+    line-height: 36px; }
+    .pagarme-checkout-step-indicator li.validated {
+      color: #ccc; }
+    .pagarme-checkout-step-indicator li.active {
+      font-size: 36px;
+      color: #fff; }
+
+*:focus {
+  outline: none;
+  -moz-appearance: none; }
+
+#pagarme-modal-box {
+  position: relative;
+  width: 390px;
+  z-index: 2; }
+  #pagarme-modal-box .pretty-select-container,
+  #pagarme-modal-box input,
+  #pagarme-modal-box button {
+    text-overflow: ellipsis;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 15px 50px 15px 15px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    width: 356px;
+    border: 0; }
+  #pagarme-modal-box .pretty-select-container {
+    position: relative;
+    height: 55px;
+    padding: 0 15px; }
+    #pagarme-modal-box .pretty-select-container select {
+      -webkit-appearance: button;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+      -webkit-opacity: 0;
+      -moz-opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha" Opacity=0;
+      -o-opacity: 0;
+      opacity: 0; }
+    #pagarme-modal-box .pretty-select-container span {
+      display: block;
+      display: inline-block;
+      padding: 15px 0;
+      line-height: normal;
+      margin: 2px 0;
+      width: 100px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      #pagarme-modal-box .pretty-select-container span.placeholder {
+        color: #aaa; }
+    #pagarme-modal-box .pretty-select-container img {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      margin-top: -3px; }
+  #pagarme-modal-box .pagarme-checkout-input-container {
+    margin: 0 0 6px 0;
+    display: block;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    width: 386px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    cursor: text;
+    overflow: hidden;
+    position: relative;
+    height: 55px;
+    -webkit-transition: box-shadow 0.25s ease-out, border-color 0.25s ease-out;
+    -moz-transition: box-shadow 0.25s ease-out, border-color 0.25s ease-out;
+    -o-transition: box-shadow 0.25s ease-out, border-color 0.25s ease-out;
+    -ms-transition: box-shadow 0.25s ease-out, border-color 0.25s ease-out;
+    transition: box-shadow 0.25s ease-out, border-color 0.25s ease-out; }
+    #pagarme-modal-box .pagarme-checkout-input-container .brand-icon {
+      display: none; }
+    #pagarme-modal-box .pagarme-checkout-input-container .pagarme-checkout-success-mark, #pagarme-modal-box .pagarme-checkout-input-container .pagarme-checkout-error-mark, #pagarme-modal-box .pagarme-checkout-input-container .pagarme-checkout-loading {
+      position: absolute;
+      right: -30px;
+      top: 21px;
+      width: 30px;
+      text-align: left;
+      color: #00AB65;
+      display: none;
+      font-size: 12px;
+      -webkit-transition: right 0.25s ease-out;
+      -moz-transition: right 0.25s ease-out;
+      -o-transition: right 0.25s ease-out;
+      -ms-transition: right 0.25s ease-out;
+      transition: right 0.25s ease-out; }
+    #pagarme-modal-box .pagarme-checkout-input-container .pagarme-checkout-error-mark {
+      color: #ff571a; }
+    #pagarme-modal-box .pagarme-checkout-input-container.pagarme-success input, #pagarme-modal-box .pagarme-checkout-input-container.pagarme-error input, #pagarme-modal-box .pagarme-checkout-input-container.pagarme-loading input {
+      width: 326px; }
+    #pagarme-modal-box .pagarme-checkout-input-container.pagarme-success .pretty-select-container img, #pagarme-modal-box .pagarme-checkout-input-container.pagarme-error .pretty-select-container img, #pagarme-modal-box .pagarme-checkout-input-container.pagarme-loading .pretty-select-container img {
+      display: none; }
+    #pagarme-modal-box .pagarme-checkout-input-container.pagarme-success {
+      border-color: #00AB65; }
+      #pagarme-modal-box .pagarme-checkout-input-container.pagarme-success .pagarme-checkout-success-mark {
+        right: 0;
+        display: inline-block; }
+      #pagarme-modal-box .pagarme-checkout-input-container.pagarme-success input, #pagarme-modal-box .pagarme-checkout-input-container.pagarme-success span {
+        color: #00AB65; }
+    #pagarme-modal-box .pagarme-checkout-input-container.pagarme-error {
+      border-color: #ff571a; }
+      #pagarme-modal-box .pagarme-checkout-input-container.pagarme-error .pagarme-checkout-error-mark {
+        right: 0;
+        display: inline-block; }
+      #pagarme-modal-box .pagarme-checkout-input-container.pagarme-error input {
+        color: #ff571a; }
+    #pagarme-modal-box .pagarme-checkout-input-container.pagarme-loading .pagarme-checkout-loading {
+      right: 0;
+      display: inline-block; }
+    #pagarme-modal-box .pagarme-checkout-input-container.readonly, #pagarme-modal-box .pagarme-checkout-input-container.readonly * {
+      cursor: not-allowed; }
+    #pagarme-modal-box .pagarme-checkout-input-container.focus {
+      -moz-box-shadow: 0 0 4px 1px #1687c8;
+      -webkit-box-shadow: 0 0 4px 1px #1687c8;
+      -o-box-shadow: 0 0 4px 1px #1687c8;
+      -ms-box-shadow: 0 0 4px 1px #1687c8;
+      box-shadow: 0 0 4px 1px #1687c8;
+      border-color: #1687c8; }
+  #pagarme-modal-box button {
+    text-align: left;
+    color: #fff;
+    width: 390px;
+    height: 80px;
+    cursor: pointer;
+    vertical-align: middle; }
+    #pagarme-modal-box button .icon-pg-checkout-continue {
+      float: right;
+      font-size: 22px; }
+    #pagarme-modal-box button:focus {
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      -o-box-shadow: none;
+      -ms-box-shadow: none;
+      box-shadow: none; }
+
+.pagarme-checkout-step {
+  left: 0;
+  position: relative;
+  width: 390px;
+  text-align: left;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha" Opacity=100;
+  -o-opacity: 1;
+  opacity: 1;
+  margin-bottom: 50px;
+  z-index: 1000; }
+  .pagarme-checkout-step.hidden {
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha" Opacity=0;
+    -o-opacity: 0;
+    opacity: 0; }
+  .pagarme-checkout-step.next, .pagarme-checkout-step.previous {
+    z-index: 1; }
+  .pagarme-checkout-step.next {
+    left: 100px; }
+  .pagarme-checkout-step.previous {
+    left: -100px; }
+
+#pagarme-modal-box-step-choose-method button,
+#pagarme-modal-box-step-boleto-only button {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  font-size: 20px;
+  background: none;
+  height: auto;
+  border: 0;
+  width: 370px;
+  height: 100px;
+  -webkit-transition: font-size 0.35s ease-out;
+  -moz-transition: font-size 0.35s ease-out;
+  -o-transition: font-size 0.35s ease-out;
+  -ms-transition: font-size 0.35s ease-out;
+  transition: font-size 0.35s ease-out; }
+
+#pagarme-modal-box-step-choose-method .choose-method-button-container,
+#pagarme-modal-box-step-boleto-only .choose-method-button-container {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  height: 100px; }
+  #pagarme-modal-box-step-choose-method .choose-method-button-container.spinner,
+  #pagarme-modal-box-step-boleto-only .choose-method-button-container.spinner {
+    overflow: visible !important; }
+  #pagarme-modal-box-step-choose-method .choose-method-button-container .payment-discount,
+  #pagarme-modal-box-step-boleto-only .choose-method-button-container .payment-discount {
+    font-size: 12px; }
+  #pagarme-modal-box-step-choose-method .choose-method-button-container .payment-method-helper-text,
+  #pagarme-modal-box-step-boleto-only .choose-method-button-container .payment-method-helper-text {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    font-style: italic;
+    transform: translateY(0) translateZ(0);
+    -webkit-transition: transform 0.35s ease-out;
+    -moz-transition: transform 0.35s ease-out;
+    -o-transition: transform 0.35s ease-out;
+    -ms-transition: transform 0.35s ease-out;
+    transition: transform 0.35s ease-out; }
+
+#pagarme-modal-box-step-choose-method .arrow,
+#pagarme-modal-box-step-boleto-only .arrow {
+  background-image: url("../images/payment-method-button.png");
+  background-repeat: no-repeat;
+  background-position: -210px -30px;
+  -webkit-transition: background 0.35s ease-out;
+  -moz-transition: background 0.35s ease-out;
+  -o-transition: background 0.35s ease-out;
+  -ms-transition: background 0.35s ease-out;
+  transition: background 0.35s ease-out; }
+  #pagarme-modal-box-step-choose-method .arrow span.button-indicator,
+  #pagarme-modal-box-step-boleto-only .arrow span.button-indicator {
+    color: #fff;
+    position: absolute;
+    top: 37px;
+    right: 30px;
+    font-size: 25px;
+    -webkit-transition: right 0.35s ease-out;
+    -moz-transition: right 0.35s ease-out;
+    -o-transition: right 0.35s ease-out;
+    -ms-transition: right 0.35s ease-out;
+    transition: right 0.35s ease-out; }
+  #pagarme-modal-box-step-choose-method .arrow.mf-fake-hover, #pagarme-modal-box-step-choose-method .arrow:hover,
+  #pagarme-modal-box-step-boleto-only .arrow.mf-fake-hover,
+  #pagarme-modal-box-step-boleto-only .arrow:hover {
+    background-position: 210px -30px; }
+    #pagarme-modal-box-step-choose-method .arrow.mf-fake-hover span.button-indicator, #pagarme-modal-box-step-choose-method .arrow:hover span.button-indicator,
+    #pagarme-modal-box-step-boleto-only .arrow.mf-fake-hover span.button-indicator,
+    #pagarme-modal-box-step-boleto-only .arrow:hover span.button-indicator {
+      right: -30px; }
+    #pagarme-modal-box-step-choose-method .arrow.mf-fake-hover button, #pagarme-modal-box-step-choose-method .arrow:hover button,
+    #pagarme-modal-box-step-boleto-only .arrow.mf-fake-hover button,
+    #pagarme-modal-box-step-boleto-only .arrow:hover button {
+      font-size: 1.5em; }
+    #pagarme-modal-box-step-choose-method .arrow.mf-fake-hover .payment-method-helper-text, #pagarme-modal-box-step-choose-method .arrow:hover .payment-method-helper-text,
+    #pagarme-modal-box-step-boleto-only .arrow.mf-fake-hover .payment-method-helper-text,
+    #pagarme-modal-box-step-boleto-only .arrow:hover .payment-method-helper-text {
+      transform: translateY(2px) translateZ(0); }
+
+#pagarme-modal-box-step-choose-method #pagarme-checkout-card-button,
+#pagarme-modal-box-step-boleto-only #pagarme-checkout-card-button {
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-top-left-radius: 6px;
+  -ms-border-top-left-radius: 6px;
+  -o-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-top-right-radius: 6px;
+  -ms-border-top-right-radius: 6px;
+  -o-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 0 10px; }
+  #pagarme-modal-box-step-choose-method #pagarme-checkout-card-button button,
+  #pagarme-modal-box-step-boleto-only #pagarme-checkout-card-button button {
+    border-bottom-color: #458ae9;
+    border-bottom-style: solid;
+    border-bottom-width: 1px; }
+
+#pagarme-modal-box-step-choose-method #pagarme-checkout-boleto-button,
+#pagarme-modal-box-step-boleto-only #pagarme-checkout-boleto-button {
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-bottom-right-radius: 6px;
+  -ms-border-bottom-right-radius: 6px;
+  -o-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-bottom-left-radius: 6px;
+  -ms-border-bottom-left-radius: 6px;
+  -o-border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 0 10px; }
+
+#pagarme-modal-box-step-choose-method.mf-fake-hover #pagarme-checkout-card-button button, #pagarme-modal-box-step-choose-method:hover #pagarme-checkout-card-button button,
+#pagarme-modal-box-step-boleto-only.mf-fake-hover #pagarme-checkout-card-button button,
+#pagarme-modal-box-step-boleto-only:hover #pagarme-checkout-card-button button {
+  border-bottom: none; }
+
+#pagarme-modal-box-step-boleto-only #pagarme-checkout-boleto-button {
+  border-radius: 6px; }
+
+#pagarme-modal-box-step-boleto-installment-information .boleto-installment-button {
+  margin-top: 10px; }
+
+#pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container {
+  margin-right: 6px;
+  float: left;
+  width: 221px; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container .pretty-select-container {
+    width: 191px; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.pagarme-success input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.pagarme-error input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.pagarme-error .pretty-select-container {
+    padding-right: 50px;
+    width: 171px; }
+
+#pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container {
+  float: left;
+  width: 155px; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container .pretty-select-container {
+    width: 125px; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.pagarme-success input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.pagarme-error input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.pagarme-error .pretty-select-container {
+    padding-right: 50px;
+    width: 105px; }
+
+#pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.has-installments {
+  margin-right: 6px;
+  float: left;
+  width: 120px; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.has-installments input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.has-installments .pretty-select-container {
+    width: 90px; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.has-installments.pagarme-success input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.has-installments.pagarme-success .pretty-select-container, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.has-installments.pagarme-error input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-expiration-container.has-installments.pagarme-error .pretty-select-container {
+    padding-right: 50px;
+    width: 70px; }
+
+#pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.has-installments {
+  margin-right: 6px;
+  float: left;
+  width: 100px; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.has-installments input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.has-installments .pretty-select-container {
+    width: 70px; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.has-installments.pagarme-success input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.has-installments.pagarme-success .pretty-select-container, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.has-installments.pagarme-error input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-credit-card-cvv-container.has-installments.pagarme-error .pretty-select-container {
+    padding-right: 50px;
+    width: 50px; }
+
+#pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container {
+  display: none;
+  float: left;
+  width: 146px; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container .pretty-select-container {
+    width: 116px; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container.pagarme-success input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container.pagarme-error input, #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container.pagarme-error .pretty-select-container {
+    padding-right: 50px;
+    width: 96px; }
+  #pagarme-modal-box-step-credit-card-information #pagarme-checkout-installments-container.has-installments {
+    display: block; }
+
+#pagarme-modal-box-step-credit-card-information.next #pagarme-checkout-card-container .field, #pagarme-modal-box-step-credit-card-information.previous #pagarme-checkout-card-container .field {
+  display: none; }
+
+#pagarme-modal-box-step-buyer-information #pagarme-checkout-ddd-field-container {
+  margin-right: 6px;
+  float: left;
+  width: 115px; }
+  #pagarme-modal-box-step-buyer-information #pagarme-checkout-ddd-field-container input, #pagarme-modal-box-step-buyer-information #pagarme-checkout-ddd-field-container .pretty-select-container {
+    width: 85px; }
+  #pagarme-modal-box-step-buyer-information #pagarme-checkout-ddd-field-container.pagarme-success input, #pagarme-modal-box-step-buyer-information #pagarme-checkout-ddd-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-buyer-information #pagarme-checkout-ddd-field-container.pagarme-error input, #pagarme-modal-box-step-buyer-information #pagarme-checkout-ddd-field-container.pagarme-error .pretty-select-container {
+    padding-right: 50px;
+    width: 65px; }
+
+#pagarme-modal-box-step-buyer-information #pagarme-checkout-phone-number-field-container {
+  float: left;
+  width: 261px; }
+  #pagarme-modal-box-step-buyer-information #pagarme-checkout-phone-number-field-container input, #pagarme-modal-box-step-buyer-information #pagarme-checkout-phone-number-field-container .pretty-select-container {
+    width: 231px; }
+  #pagarme-modal-box-step-buyer-information #pagarme-checkout-phone-number-field-container.pagarme-success input, #pagarme-modal-box-step-buyer-information #pagarme-checkout-phone-number-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-buyer-information #pagarme-checkout-phone-number-field-container.pagarme-error input, #pagarme-modal-box-step-buyer-information #pagarme-checkout-phone-number-field-container.pagarme-error .pretty-select-container {
+    padding-right: 50px;
+    width: 211px; }
+
+#pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-street-field-container {
+  margin-right: 6px;
+  float: left;
+  width: 255px; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-street-field-container input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-street-field-container .pretty-select-container {
+    width: 225px; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-street-field-container.pagarme-success input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-street-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-street-field-container.pagarme-error input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-street-field-container.pagarme-error .pretty-select-container {
+    padding-right: 50px;
+    width: 205px; }
+
+#pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-number-field-container {
+  float: left;
+  width: 121px; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-number-field-container input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-number-field-container .pretty-select-container {
+    width: 91px; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-number-field-container.pagarme-success input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-number-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-number-field-container.pagarme-error input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-number-field-container.pagarme-error .pretty-select-container {
+    padding-right: 50px;
+    width: 71px; }
+
+#pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-complementary-field-container {
+  margin-right: 6px;
+  float: left;
+  width: 216px; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-complementary-field-container input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-complementary-field-container .pretty-select-container {
+    width: 186px; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-complementary-field-container.pagarme-success input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-complementary-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-complementary-field-container.pagarme-error input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-complementary-field-container.pagarme-error .pretty-select-container {
+    padding-right: 50px;
+    width: 166px; }
+
+#pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-neighborhood-field-container {
+  float: left;
+  width: 160px; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-neighborhood-field-container input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-neighborhood-field-container .pretty-select-container {
+    width: 130px; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-neighborhood-field-container.pagarme-success input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-neighborhood-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-neighborhood-field-container.pagarme-error input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-neighborhood-field-container.pagarme-error .pretty-select-container {
+    padding-right: 50px;
+    width: 110px; }
+
+#pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-city-field-container {
+  margin-right: 6px;
+  float: left;
+  width: 286px; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-city-field-container input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-city-field-container .pretty-select-container {
+    width: 256px; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-city-field-container.pagarme-success input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-city-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-city-field-container.pagarme-error input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-city-field-container.pagarme-error .pretty-select-container {
+    padding-right: 50px;
+    width: 236px; }
+
+#pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-state-field-container {
+  float: left;
+  width: 90px; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-state-field-container input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-state-field-container .pretty-select-container {
+    width: 60px; }
+  #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-state-field-container.pagarme-success input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-state-field-container.pagarme-success .pretty-select-container, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-state-field-container.pagarme-error input, #pagarme-modal-box-step-customer-address-information #pagarme-checkout-address-state-field-container.pagarme-error .pretty-select-container {
+    padding-right: 50px;
+    width: 40px; }
+
+#pagarme-checkout-error-container {
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha" Opacity=100;
+  -o-opacity: 1;
+  opacity: 1;
+  color: #fff; }
+  #pagarme-checkout-error-container #pagarme-checkout-error-header {
+    background-color: #dc4a4a;
+    padding: 20px 25px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    -webkit-border-top-left-radius: 6px;
+    -moz-border-top-left-radius: 6px;
+    -ms-border-top-left-radius: 6px;
+    -o-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-top-right-radius: 6px;
+    -ms-border-top-right-radius: 6px;
+    -o-border-top-right-radius: 6px;
+    border-top-right-radius: 6px; }
+  #pagarme-checkout-error-container #pagarme-checkout-error-body {
+    background-color: #fff;
+    color: #8d8d8d;
+    padding: 25px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-bottom-right-radius: 6px;
+    -ms-border-bottom-right-radius: 6px;
+    -o-border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-bottom-left-radius: 6px;
+    -ms-border-bottom-left-radius: 6px;
+    -o-border-bottom-left-radius: 6px;
+    border-bottom-left-radius: 6px; }
+  #pagarme-checkout-error-container #pagarme-checkout-error-back-button {
+    background-color: #3e3f41;
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+    padding: 25px;
+    font-size: 18px;
+    font-weight: 800;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px; }
+
+.pretty-select-wrap {
+  position: relative;
+  cursor: pointer; }
+  .pretty-select-wrap * {
+    cursor: pointer; }
+  .pretty-select-wrap .pretty-select-select-container {
+    height: 98px;
+    position: absolute;
+    top: 0;
+    left: 102%;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transition: all 0.3s cubic-bezier(0.34, 1.61, 0.7, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.34, 1.61, 0.7, 1);
+    -o-transition: all 0.3s cubic-bezier(0.34, 1.61, 0.7, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.34, 1.61, 0.7, 1);
+    transition: all 0.3s cubic-bezier(0.34, 1.61, 0.7, 1); }
+    .pretty-select-wrap .pretty-select-select-container.hidden {
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
+      -webkit-transition: all 0.3s cubic-bezier(0.2, 1, 0.7, 1);
+      -moz-transition: all 0.3s cubic-bezier(0.2, 1, 0.7, 1);
+      -o-transition: all 0.3s cubic-bezier(0.2, 1, 0.7, 1);
+      -ms-transition: all 0.3s cubic-bezier(0.2, 1, 0.7, 1);
+      transition: all 0.3s cubic-bezier(0.2, 1, 0.7, 1); }
+    .pretty-select-wrap .pretty-select-select-container .select-arrow {
+      border: solid transparent;
+      width: 0;
+      height: 0;
+      border-right-color: #fff;
+      border-width: 5px;
+      position: absolute;
+      left: -5px;
+      top: 25px; }
+    .pretty-select-wrap .pretty-select-select-container .select-options {
+      padding: 5px;
+      min-width: 50px;
+      overflow: scroll;
+      background-color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 5px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -o-border-radius: 6px;
+      -ms-border-radius: 6px;
+      border-radius: 6px; }
+      .pretty-select-wrap .pretty-select-select-container .select-options .select-option {
+        text-align: left;
+        padding: 8px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -o-border-radius: 6px;
+        -ms-border-radius: 6px;
+        border-radius: 6px;
+        font-size: 14px;
+        white-space: nowrap; }
+        .pretty-select-wrap .pretty-select-select-container .select-options .select-option:hover {
+          background-color: gray;
+          color: #fff; }
+        .pretty-select-wrap .pretty-select-select-container .select-options .select-option.active {
+          background-color: #1a6ee1;
+          color: #fff; }
