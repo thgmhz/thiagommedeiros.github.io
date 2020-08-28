@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Raleway:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #364dcc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 20px;
+      font-family: 'Raleway', sans-serif;
+      color: white;
+
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .photo {
+      width: 120px;
+      border-radius: 100%;
+      border: 3px solid white;
+      box-shadow: 0 0 15px rgb(255, 255, 255);
+      margin-bottom: 20px
+    }
+
+    .name {
+      font-family: 'Architects Daughter', cursive;
+      font-size: 20px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .social {
+      display: flex;
+      margin: 5px 0 20px;
+    }
+
+    .social img {
+      width: 33px;
+      margin: 0 19px;
+      fill: white;
+    }
+    
+    .buttons {
+      display: block;
+      background: rgb(255, 255, 255);
+      padding: 20px;
+      border-radius: 6px;
+      color: rgb(0, 0, 0);
+      font-size: 18px;
+      text-decoration: none;
+      margin-bottom: 12px;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .buttons:hover, .buttons:focus, .buttons:active {
+      box-shadow: 0 0 20px white;
+      color:#364dcc;
+    }
+
+    .buttons span {
+      display: block;
+      margin: 5px 0 0;
+      color: rgb(138, 138, 138);
+    }
+  </style>
+</head>
+<body class="header-hero bg_cover" style="background-image: url(banner-bg.svg)">
+
+  <img src="thiago.jpg" alt="Foto: Thiago" class="photo">
+  <span class="name">Thiago M. Medeiros</span>
+
+  <div class="social">
+    <a target="_blank" href="https://www.instagram.com/thiagomunhozmedeiros/">
+      <img src="insta.svg" alt="Instagram">
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/tmunhoz/">
+      <img src="linkedin.svg" alt="Linkedin">
+    </a>
+    <a target="_blank" href="https://github.com/thiagommedeiros">
+      <img src="github.svg" alt="Github">
+    </a>
+  </div>
+
+  <h2>Youtube</h2>
+  <a href="https://www.youtube.com/user/thiagomunhozmedeiros" target="_blank" class="buttons">
+    Canal Thiago M. Medeiros
+    <span>Meu canal pessoal sobre tecnologia e programação.</span>
+  </a>
+  <a href="https://www.youtube.com/channel/UCswxTAwZyxGHR6nlYcecIkA" target="_blank" class="buttons">
+    Canal Cá Estamos
+    <span>Vlogs sobre viver em Portugal</span>
+  </a>
+
+  <h2>Cursos</h2>
+  <a href="/pre-inscricao/" target="_blank" class="buttons">
+    Programação do zero à junior
+    <span>Meu curso de desenvolvimento web para iniciantes.</span>
+  </a>
+  
+</body>
+</html>
