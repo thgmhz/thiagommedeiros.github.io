@@ -32,16 +32,23 @@
       margin-bottom: 20px
     }
 
-    .name {
-      font-family: 'Architects Daughter', cursive;
-      font-size: 20px;
+    .name, .skill {
       display: inline-block;
-      margin-bottom: 10px;
+    }
+    
+    .name {
+      font-size: 24px;
+      font-family: 'Architects Daughter', cursive;
+    }
+
+    .skill {
+      font-size: 16px;
+      font-weight: 100;
     }
 
     .social {
       display: flex;
-      margin: 30px 0 20px;
+      margin: 30px 0;
     }
 
     .social img {
@@ -63,7 +70,7 @@
       max-width: 500px;
     }
 
-    .buttons:hover, .buttons:active {
+    .buttons:hover, .buttons:active, .active{
       box-shadow: 0 0 20px white;
       color:#364dcc;
     }
@@ -73,28 +80,36 @@
       margin: 5px 0 0;
       color: rgb(138, 138, 138);
     }
+
+    .shake {
+      display: block;
+      animation: shake 1s infinite;
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translate(0px, 0px) rotate(0deg);
+      }
+      25% {
+        transform: translate(1px, 1px) rotate(1deg);
+      }
+      50% {
+        transform: translate(0px, 0px) rotate(0deg);
+      }
+      75% {
+        transform: translate(2px, -1px) rotate(1deg);
+      }
+      100% {
+        transform: translate(0px, 0px) rotate(0deg);
+      }
+    }
   </style>
 </head>
 <body class="header-hero bg_cover" style="background-image: url(banner-bg.svg)">
 
   <img src="thiago.jpg" alt="Foto: Thiago" class="photo">
   <span class="name">Thiago M. Medeiros</span>
-
-  <h2>Youtube</h2>
-  <a href="https://www.youtube.com/user/thiagomunhozmedeiros" target="_blank" class="buttons">
-    Canal Thiago M. Medeiros
-    <span>Meu canal pessoal sobre tecnologia e programação.</span>
-  </a>
-  <a href="https://www.youtube.com/channel/UCswxTAwZyxGHR6nlYcecIkA" target="_blank" class="buttons">
-    Canal Cá Estamos
-    <span>Vlogs sobre viver em Portugal</span>
-  </a>
-
-  <h2>Cursos</h2>
-  <a href="/pre-inscricao/" target="_blank" class="buttons">
-    Programação do zero à junior
-    <span>Meu curso de desenvolvimento web para iniciantes.</span>
-  </a>
+  <span class="skill">Software Developer and Teacher</span>
 
   <div class="social">
     <a target="_blank" href="https://www.instagram.com/thiagomunhozmedeiros/">
@@ -107,6 +122,23 @@
       <img src="github.svg" alt="Github">
     </a>
   </div>
+
+  <a href="https://www.youtube.com/user/thiagomunhozmedeiros" target="_blank" class="buttons">
+    Canal Thiago M. Medeiros
+    <span>Meu canal pessoal sobre tecnologia e programação.</span>
+  </a>
+  <a href="https://www.youtube.com/channel/UCswxTAwZyxGHR6nlYcecIkA" target="_blank" class="buttons">
+    Canal Cá Estamos
+    <span>Vlogs sobre viver em Portugal</span>
+  </a>
+
+  <a href="/pre-inscricao/" target="_blank" class="buttons shake active">
+    Programação do zero à junior
+    <span>Meu curso de desenvolvimento web para iniciantes.</span>
+    <strong style="color: black">15% de desconto agora!</strong>
+  </a>
+
+
   
 </body>
 </html>
