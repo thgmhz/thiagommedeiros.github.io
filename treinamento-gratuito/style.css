@@ -10,6 +10,7 @@ body {
 p {
   font-size: 1em;
   line-height: 1.7em;
+  text-align: justify;
 }
 
 .photo {
@@ -39,7 +40,7 @@ p {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 30px auto;
+  margin: 30px auto 0;
 }
 
 .social img {
@@ -65,8 +66,14 @@ p {
 
 header {
   padding: 0 0 10px;
-  margin-bottom: 33px;
-  border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  margin: 40px auto;
+  background: rgb(214, 214, 214);
 }
 
 h1, h2, h3 {
@@ -93,18 +100,25 @@ h2 {
   font-size: 24px;
   line-height: 33px;
   text-align: justify;
+}
 
+h3 {
+  margin-bottom: 0;
 }
 
 
 
 @media only screen and (max-width: 500px) {
   h1 {
-    font-size: 32px
+    font-size: 33px
   } 
 
   h2 {
     font-size: 20px;
+  }
+
+  h3 {
+    font-size: 33px;
   }
 }
 
