@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  color: rgb(19, 19, 19);
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.7em;
+}
+
+.photo {
+  display: block;
+  width: 150px;
+  border-radius: 100%;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 0 0 15px rgb(226, 226, 226);
+  margin: 33px auto;
+}
+
+.name, .skill {
+  display: block;
+  text-align: center;
+}
+
+.name {
+  font-size: 33px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.skill {
+  font-size: 18px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.social img {
+  width: 33px;
+  margin: 0 19px;
+  fill: white;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+
+header {
+  padding: 0 0 10px;
+  margin-bottom: 33px;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h1, h3 { 
+  font-family: 'Oswald', sans-serif;
+  font-size: 42px;
+  color: #33bbff;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+h3 {
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 15px
+}
+
+ul li p {
+  margin: 0;
+}
+
+.video {
+  background: rgb(65, 65, 65);
+  width: 100%;
+  height: 400px;
+  margin-bottom: 44px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 20px 40px;
+  border-color: #000000;
+  border-width: 1px;
+  border-radius: 6px;
+  background: #3d9eff;
+  background: linear-gradient(to bottom,rgb(0 179 255) 0,rgb(0 60 83) 100%);
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5), inset 0px 0px 0px 1px rgba(255,255,255,0.25);
+  border: 1px solid #00389f;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px black;
+  font-size: 19px;
+  margin: 30px auto;
+  display: inline-block;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  margin-top: 50px;
+  background-color: #00537c;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+
