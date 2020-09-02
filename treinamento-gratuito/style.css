@@ -49,8 +49,16 @@ p {
 }
 
 .container {
-  width: 800px;
+  width: 900px;
   margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }  
 }
 
 
@@ -61,7 +69,6 @@ header {
 }
 
 h1, h2, h3 {
-  text-align: center;
   text-transform: uppercase;
   margin: 0;
 }
@@ -69,18 +76,35 @@ h1, h2, h3 {
 h1, h3 { 
   font-family: 'Oswald', sans-serif;
   font-size: 42px;
-  color: #33bbff;
+  color: white;
+  background: #33bbff;
   margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 62px;
 }
 
 h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
   line-height: 33px;
+  text-align: justify;
+
 }
 
-h3 {
-  text-align: left;
+
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 32px
+  } 
+
+  h2 {
+    font-size: 20px;
+  }
 }
 
 ul {
