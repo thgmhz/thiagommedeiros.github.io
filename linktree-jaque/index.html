@@ -6,6 +6,10 @@
   <title>Meus links</title>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Raleway:wght@600&display=swap" rel="stylesheet">
   <style>
+    html, body {
+      height: 100%;
+    }
+    
     body {
       background: #364dcc;
       display: flex;
@@ -14,7 +18,7 @@
       padding: 10px 20px;
       font-family: 'Raleway', sans-serif;
       color: white;
-
+      margin: 0;
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -29,14 +33,16 @@
       border-radius: 100%;
       border: 3px solid white;
       box-shadow: 0 0 15px rgb(255, 255, 255);
-      margin-bottom: 20px
+      margin-bottom: 10px
     }
 
     .name, .skill {
       display: inline-block;
+      text-align: center;
     }
     
     .name {
+      color: black;
       font-size: 24px;
       font-family: 'Architects Daughter', cursive;
     }
@@ -48,7 +54,7 @@
 
     .social {
       display: flex;
-      margin: 30px 0;
+      margin: 15px 0;
     }
 
     .social img {
@@ -60,12 +66,12 @@
     .buttons {
       display: block;
       background: rgb(255, 255, 255);
-      padding: 20px;
+      padding: 14px 20px;
       border-radius: 6px;
       color: rgb(0, 0, 0);
-      font-size: 18px;
+      font-size: 16px;
       text-decoration: none;
-      margin-bottom: 12px;
+      margin-bottom: 4px;
       width: 90%;
       max-width: 500px;
     }
@@ -79,6 +85,7 @@
       display: block;
       margin: 5px 0 0;
       color: rgb(138, 138, 138);
+      font-size: 14px;
     }
 
     .shake {
@@ -105,40 +112,40 @@
     }
   </style>
 </head>
-<body class="header-hero bg_cover" style="background-image: url(banner-bg.svg)">
+<body class="header-hero bg_cover" style="background-image: url(background.png)">
 
   <img src="jaque.jpg" alt="Foto: Jaqueline" class="photo">
-  <span class="name">Jaqueline M. M. Medeiros</span>
+  <span class="name">Jaqueline Moreira</span>
   <span class="skill"></span>
 
   <div class="social">
-    <a target="_blank" href="https://www.instagram.com/thiagomunhozmedeiros/">
+    <a target="_blank" href="https://www.instagram.com/jaquelinemmmedeiros/">
       <img src="insta.svg" alt="Instagram">
     </a>
-    <a target="_blank" href="https://www.linkedin.com/in/tmunhoz/">
-      <img src="linkedin.svg" alt="Linkedin">
+    <a target="_blank" href="https://wa.me/351960262110">
+      <img src="whatsapp.png" alt="Whatsapp" style="width: 37px">
     </a>
-    <a target="_blank" href="https://github.com/thiagommedeiros">
-      <img src="github.svg" alt="Github">
+    <a target="_blank" href="https://www.youtube.com/channel/UCswxTAwZyxGHR6nlYcecIkA">
+      <img src="youtube.png" alt="Youtube">
     </a>
   </div>
 
-  <a href="https://www.youtube.com/user/thiagomunhozmedeiros" target="_blank" class="buttons">
-    Canal Thiago M. Medeiros
-    <span>Meu canal pessoal sobre tecnologia e programação.</span>
+  <a href="https://www.instagram.com/jm.patchwork" target="_blank" class="buttons">
+    Ateliê JM Patchwork
+    <span>Costura criativa e bordado sob encomenda.</span>
+  </a>
+  <a href="https://www.instagram.com/delicato_paesdemel" target="_blank" class="buttons">
+    Delicato Pães de Mel
+    <span>Pão de mel artesanal sob encomenda.</span>
+  </a>
+  <a href="https://wa.me/351960262110" target="_blank" class="buttons">
+    Whatsapp
+    <span>Clique para falar comigo.</span>
   </a>
   <a href="https://www.youtube.com/channel/UCswxTAwZyxGHR6nlYcecIkA" target="_blank" class="buttons">
     Canal Cá Estamos
-    <span>Vlogs sobre viver em Portugal</span>
+    <span>Vlogs sobre viver em Portugal.</span>
   </a>
-
-  <a href="/pre-inscricao/" target="_blank" class="buttons shake active">
-    Programação do zero à junior
-    <span>Meu curso de desenvolvimento web para iniciantes.</span>
-    <strong style="color: black">15% de desconto agora!</strong>
-  </a>
-
-
   
 </body>
 </html>

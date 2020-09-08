@@ -69,8 +69,8 @@ header.masthead h1 {
   background-size: cover;
 }
 
-.showcase .showcase-img .img-thi {
-
+.img-thi {
+  background-position: top right;
 }
 
 @media (min-width: 768px) {
