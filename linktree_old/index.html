@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Raleway:wght@600&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+    }
+    
+    body {
+      background: #364dcc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 20px;
+      font-family: 'Raleway', sans-serif;
+      color: white;
+      margin: 0;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    h2 {
+      margin: 10px 0;
+    }
+
+    .photo {
+      width: 80px;
+      border-radius: 100%;
+      border: 3px solid white;
+      box-shadow: 0 0 15px rgb(255, 255, 255);
+      margin-bottom: 10px
+    }
+
+    .name, .skill {
+      display: inline-block;
+      text-align: center;
+    }
+    
+    .name {
+      font-size: 24px;
+      font-family: 'Architects Daughter', cursive;
+    }
+
+    .skill {
+      font-size: 16px;
+      font-weight: 100;
+    }
+
+    .social {
+      
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin: 30px 0;
+      max-width: 500px;
+    }
+
+    .social img {
+      width: 33px;
+    }
+    
+    .buttons {
+      display: block;
+      background: rgb(255, 255, 255);
+      padding: 14px 20px;
+      border-radius: 6px;
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      text-decoration: none;
+      margin-bottom: 6px;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .buttons:hover, .buttons:active, .active{
+      box-shadow: 0 0 20px white;
+      color:#364dcc;
+    }
+
+    .buttons span {
+      display: block;
+      margin: 5px 0 0;
+      color: rgb(138, 138, 138);
+      font-size: 14px;
+    }
+
+    .shake {
+      display: block;
+      animation: shake 1s infinite;
+    }
+    
+    .active {
+      margin-bottom: 8px;
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translate(0px, 0px) rotate(0deg);
+      }
+      25% {
+        transform: translate(1px, 1px) rotate(1deg);
+      }
+      50% {
+        transform: translate(0px, 0px) rotate(0deg);
+      }
+      75% {
+        transform: translate(2px, -1px) rotate(1deg);
+      }
+      100% {
+        transform: translate(0px, 0px) rotate(0deg);
+      }
+    }
+  </style>
+</head>
+<body class="header-hero bg_cover" style="background-image: url(banner-bg.svg)">
+
+  <img src="thiago.jpg" alt="Foto: Thiago" class="photo">
+  <span class="name">Thiago M. Medeiros</span>
+  <span class="skill">Programador | Professor | Youtuber</span>
+
+  <div class="social">
+    <a target="_blank" href="https://www.youtube.com/user/thiagomunhozmedeiros">
+      <img src="youtube.png" alt="Youtube">
+    </a>
+    <a target="_blank" href="https://m.instagram.com/thiagomunhozmedeiros/">
+      <img src="insta.svg" alt="Instagram">
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/tmunhoz/">
+      <img src="linkedin.svg" alt="Linkedin">
+    </a>
+    <a target="_blank" href="https://github.com/thiagommedeiros">
+      <img src="github.svg" alt="Github">
+    </a>
+    <a target="_blank" href="https://wa.me/351910071326">
+      <img src="whatsapp.png" alt="Whatsapp">
+    </a>
+  </div>
+
+  <a href="https://go.hotmart.com/L40711839H" target="_blank" class="buttons active">
+    Desenvolvimento Web Full Stack
+    <span>Curso de programação web para iniciantes (do zero).</span>
+  </a>
+  <a href="https://go.hotmart.com/V41704134S" target="_blank" class="buttons active">
+    Fábrica de Aplicativos - React Native
+    <span>Curso de desenvolvimento de aplicativos para iniciantes (do zero).</span>
+  </a>
+  <a href="https://go.hotmart.com/H40709156F" target="_blank" class="buttons active">
+    Desenvolvimento de Games
+    <span>Curso completo - Aprenda a Criar e Programar Jogos Completos em 2D e 3D!</span>
+  </a>
+  <a href="https://go.hotmart.com/V41704134S?ap=1924" target="_blank" class="buttons active">
+    Workshop Gratuito - React Native - do zero ao app
+    <span>Aprenda criar aplicativos poderosos para Android e iOS.</span>
+  </a>
+
+  <br>
+
+  <a href="https://t.me/lista_vip_thiago" target="_blank" class="buttons">
+    Lista VIP - Telegram
+    <span>Para quem quer se manter atualizado sobre mundo de tecnologia.</span>
+  </a>
+  <a href="https://wa.me/351910071326" target="_blank" class="buttons">
+    Whatsapp (Suporte, mentoria, curso)
+    <span>Clique para falar comigo.</span>
+  </a>
+  <a href="https://www.youtube.com/user/thiagomunhozmedeiros" target="_blank" class="buttons">
+    Canal Thiago M. Medeiros (em breve)
+    <span>Meu canal pessoal sobre tecnologia e programação.</span>
+  </a>
+  <a href="https://www.youtube.com/channel/UCswxTAwZyxGHR6nlYcecIkA" target="_blank" class="buttons">
+    Canal Cá Estamos
+    <span>Meu canal de vlogs sobre viver em Portugal.</span>
+  </a>
+  
+
+</body>
+</html>

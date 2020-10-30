@@ -1,181 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meus links</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Raleway:wght@600&display=swap" rel="stylesheet">
-  <style>
-    html, body {
-      height: 100%;
-    }
-    
-    body {
-      background: #364dcc;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 10px 20px;
-      font-family: 'Raleway', sans-serif;
-      color: white;
-      margin: 0;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago Medeiros - Links</title>
 
-    h2 {
-      margin: 10px 0;
-    }
+    <link rel="preload" as="font" href="/fonts/roboto-400.woff2" type="font/woff2" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    .photo {
-      width: 80px;
-      border-radius: 100%;
-      border: 3px solid white;
-      box-shadow: 0 0 15px rgb(255, 255, 255);
-      margin-bottom: 10px
-    }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .name, .skill {
-      display: inline-block;
-      text-align: center;
-    }
-    
-    .name {
-      font-size: 24px;
-      font-family: 'Architects Daughter', cursive;
-    }
+        body {
+            background: #121214;
+            font-family: 'Roboto', sans-serif;
+            color: #e1e1e6;
+            padding: 5px 5px 0 5px;
+        }
 
-    .skill {
-      font-size: 16px;
-      font-weight: 100;
-    }
+        .container {
+            max-width: 500px;
+            margin: 0 auto
+        }
 
-    .social {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      margin: 30px 0;
-      max-width: 500px;
-    }
+        .profile {
+            justify-content: flex-start;
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
 
-    .social img {
-      width: 33px;
-    }
-    
-    .buttons {
-      display: block;
-      background: rgb(255, 255, 255);
-      padding: 14px 20px;
-      border-radius: 6px;
-      color: rgb(0, 0, 0);
-      font-size: 16px;
-      text-decoration: none;
-      margin-bottom: 6px;
-      width: 90%;
-      max-width: 500px;
-    }
+        .photo {
+            width: 60px;
+            border-radius: 100%;
+            margin-bottom: 10px
+        }
 
-    .buttons:hover, .buttons:active, .active{
-      box-shadow: 0 0 20px white;
-      color:#364dcc;
-    }
+        .name {
+            display: inline-block;
+            margin-left: 12px;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+        }
 
-    .buttons span {
-      display: block;
-      margin: 5px 0 0;
-      color: rgb(138, 138, 138);
-      font-size: 14px;
-    }
+        .skill {
+            font-size: 11px;
+            font-weight: 100;
+        }
 
-    .shake {
-      display: block;
-      animation: shake 1s infinite;
-    }
-    
-    .active {
-      margin-bottom: 8px;
-    }
+        .social {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            max-width: 500px;
+            z-index: 10;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 100%);
+        }
 
-    @keyframes shake {
-      0% {
-        transform: translate(0px, 0px) rotate(0deg);
-      }
-      25% {
-        transform: translate(1px, 1px) rotate(1deg);
-      }
-      50% {
-        transform: translate(0px, 0px) rotate(0deg);
-      }
-      75% {
-        transform: translate(2px, -1px) rotate(1deg);
-      }
-      100% {
-        transform: translate(0px, 0px) rotate(0deg);
-      }
-    }
-  </style>
+        .social img {
+            width: 33px;
+        }
+
+        .swipe {
+            overflow: hidden;
+            visibility: hidden;
+            position: relative;
+        }
+
+        .swipe-wrap {
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        .swipe-wrap>div {
+            float: left;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card {
+            background: #202024;
+            padding: 10px;
+            border: 10px solid #121214;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 5px;
+        }
+
+        .card h3 {
+            text-align: left;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .card .btn-more {
+            display: block;
+            text-decoration: none;
+            outline: none;
+            padding: 10px 20px;
+            background: #0095f6;
+            color: white;
+            border-radius: 6px;
+            margin-top: 14px;
+            font-size: 12px;
+        }
+
+        .swipe-indicator {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 10px;
+            margin: 5px 15px;
+            color: #636363;
+            border-radius: 3px;
+        }
+
+        @keyframes pulsea {
+            0%,
+            80%,
+            100% {
+                text-shadow:
+                    0pt 0px 0px rgba(255, 255, 255, 0),
+                    10pt 0px 0px rgba(255, 255, 255, 0),
+                    20pt 0px 0px rgba(255, 255, 255, 0);
+            }
+
+            10% {
+                text-shadow:
+                    0pt 0px 0px rgba(255, 255, 255, 0.5),
+                    10pt 0px 0px rgba(255, 255, 255, 0),
+                    20pt 0px 0px rgba(255, 255, 255, 0);
+            }
+
+            20% {
+                text-shadow:
+                    0pt 0px 0px rgba(255, 255, 255, 1),
+                    10pt 0px 0px rgba(255, 255, 255, 0),
+                    20pt 0px 0px rgba(255, 255, 255, 0);
+            }
+
+            30% {
+                text-shadow:
+                    0pt 0px 0px rgba(255, 255, 255, 0.5),
+                    10pt 0px 0px rgba(255, 255, 255, 0.5),
+                    20pt 0px 0px rgba(255, 255, 255, 0);
+            }
+
+            40% {
+                text-shadow:
+                    0pt 0px 0px rgba(255, 255, 255, 0),
+                    10pt 0px 0px rgba(255, 255, 255, 1),
+                    20pt 0px 0px rgba(255, 255, 255, 0);
+            }
+
+            50% {
+                text-shadow:
+                    0pt 0px 0px rgba(255, 255, 255, 0),
+                    10pt 0px 0px rgba(255, 255, 255, 0.5),
+                    20pt 0px 0px rgba(255, 255, 255, 0.5);
+            }
+
+            60% {
+                text-shadow:
+                    0pt 0px 0px rgba(255, 255, 255, 0),
+                    10pt 0px 0px rgba(255, 255, 255, 0),
+                    20pt 0px 0px rgba(255, 255, 255, 1);
+            }
+
+            70% {
+                text-shadow:
+                    0pt 0px 0px rgba(255, 255, 255, 0),
+                    10pt 0px 0px rgba(255, 255, 255, 0),
+                    20pt 0px 0px rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        .scrollme::after {
+            margin-left: 10px;
+            margin-right: 40px;
+            animation: pulsea 2s linear infinite;
+            font-size: 12px;
+            color: transparent;
+            font-family: FontAwesome;
+            content: "\f105";
+            text-shadow:
+                0pt 0px 0px rgba(255, 255, 255, 1),
+                10pt 0px 0px rgba(255, 255, 255, 1),
+                20pt 0px 0px rgba(255, 255, 255, 1);
+        }
+    </style>
 </head>
-<body class="header-hero bg_cover" style="background-image: url(banner-bg.svg)">
 
-  <img src="thiago.jpg" alt="Foto: Thiago" class="photo">
-  <span class="name">Thiago M. Medeiros</span>
-  <span class="skill">Programador | Professor | Youtuber</span>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="img/thiago.jpg" alt="Foto: Thiago" class="photo">
+            <span class="name">
+                Thiago Medeiros<br>
+                <span class="skill">Engenheiro de Software | Instrutor</span>
+            </span>
+        </div>
 
-  <div class="social">
-    <a target="_blank" href="https://www.youtube.com/user/thiagomunhozmedeiros">
-      <img src="youtube.png" alt="Youtube">
-    </a>
-    <a target="_blank" href="https://m.instagram.com/thiagomunhozmedeiros/">
-      <img src="insta.svg" alt="Instagram">
-    </a>
-    <a target="_blank" href="https://www.linkedin.com/in/tmunhoz/">
-      <img src="linkedin.svg" alt="Linkedin">
-    </a>
-    <a target="_blank" href="https://github.com/thiagommedeiros">
-      <img src="github.svg" alt="Github">
-    </a>
-    <a target="_blank" href="https://wa.me/351910071326">
-      <img src="whatsapp.png" alt="Whatsapp">
-    </a>
-  </div>
 
-  <a href="https://go.hotmart.com/L40711839H" target="_blank" class="buttons active">
-    Desenvolvimento Web Full Stack
-    <span>Curso de programação web para iniciantes (do zero).</span>
-  </a>
-  <a href="https://go.hotmart.com/V41704134S" target="_blank" class="buttons active">
-    Fábrica de Aplicativos - React Native
-    <span>Curso de desenvolvimento de aplicativos para iniciantes (do zero).</span>
-  </a>
-  <a href="https://go.hotmart.com/H40709156F" target="_blank" class="buttons active">
-    Desenvolvimento de Games
-    <span>Curso completo - Aprenda a Criar e Programar Jogos Completos em 2D e 3D!</span>
-  </a>
-  <a href="https://go.hotmart.com/V41704134S?ap=1924" target="_blank" class="buttons active">
-    Workshop Gratuito - React Native - do zero ao app
-    <span>Aprenda criar aplicativos poderosos para Android e iOS.</span>
-  </a>
+        <div class="content">
+            <div class="swipe-indicator">
+                Arraste para o lado
+                <div class="scrollme"></div>
+            </div>
 
-  <br>
+            <div id="slider" class="swipe">
+                <div class="swipe-wrap">
+                    <div class="card">
+                        <img src="img/curso-fullstack-programadorbr.PNG">
+                        <h3>Super Bônus</h3>
+                        <p>
+                            Inscreva-se no curso e ganhe um bônus de <strong>Suporte Técnico</strong> e <strong>Mentoria
+                                de Carreira</strong> comigo.
+                        </p>
+                        <a href="" class="btn-more">Saiba mais</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/lista-vip.png">
+                        <h3>Lista Vip - Thiago Medeiros</h3>
+                        <p>
+                            Conteúdos exclusivos sobre tecnologia e programação no Telegram.
+                        </p>
+                        <a href="" class="btn-more">Participar</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/fale-comigo.png">
+                        <h3>Whatsapp</h3>
+                        <p>
+                            Apenas para dúvidas relacionadas ao curso, suporte e mentoria.
+                        </p>
+                        <a href="" class="btn-more">Chamar</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/ca-estamos.png">
+                        <h3>Canal Cá Estamos</h3>
+                        <p>
+                            Meu canal de vlogs sobre morar em Portugal.
+                        </p>
+                        <a href="" class="btn-more">Acessar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <a href="https://t.me/lista_vip_thiago" target="_blank" class="buttons">
-    Lista VIP - Telegram
-    <span>Para quem quer se manter atualizado sobre mundo de tecnologia.</span>
-  </a>
-  <a href="https://wa.me/351910071326" target="_blank" class="buttons">
-    Whatsapp (Suporte, mentoria, curso)
-    <span>Clique para falar comigo.</span>
-  </a>
-  <a href="https://www.youtube.com/user/thiagomunhozmedeiros" target="_blank" class="buttons">
-    Canal Thiago M. Medeiros (em breve)
-    <span>Meu canal pessoal sobre tecnologia e programação.</span>
-  </a>
-  <a href="https://www.youtube.com/channel/UCswxTAwZyxGHR6nlYcecIkA" target="_blank" class="buttons">
-    Canal Cá Estamos
-    <span>Meu canal de vlogs sobre viver em Portugal.</span>
-  </a>
-  
+        <div class="social">
+            <a target="_blank" href="https://www.youtube.com/user/thiagomunhozmedeiros">
+                <img src="img/youtube.png" alt="Youtube">
+            </a>
+            <a target="_blank" href="https://m.instagram.com/thiagomunhozmedeiros/">
+                <img src="img/insta.svg" alt="Instagram">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/tmunhoz/">
+                <img src="img/linkedin.svg" alt="Linkedin">
+            </a>
+            <a target="_blank" href="https://github.com/thiagommedeiros">
+                <img src="img/github.svg" alt="Github">
+            </a>
+            <a target="_blank" href="https://wa.me/351910071326">
+                <img src="img/whatsapp.png" alt="Whatsapp">
+            </a>
+        </div>
 
+    </div>
+
+
+    <script src="js/swipe.js"></script>
+    <script>
+        window.mySwipe = new Swipe(document.getElementById('slider'), {
+            startSlide: 0,
+            speed: 200,
+            //auto: 5000,
+            draggable: false,
+            continuous: true,
+            disableScroll: false,
+            stopPropagation: false,
+            ignore: ".scroller",
+            callback: function (index, elem, dir) { },
+            transitionEnd: function (index, elem) { }
+        });
+    </script>
 </body>
+
 </html>
