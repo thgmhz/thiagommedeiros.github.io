@@ -75,7 +75,7 @@
 
         .swipe {
             overflow: hidden;
-            visibility: hidden;
+            /* visibility: hidden; */
             position: relative;
         }
 
@@ -86,15 +86,17 @@
         }
 
         .swipe-wrap>div {
-            float: left;
+            /* float: left; */
             width: 100%;
             position: relative;
             overflow: hidden;
+            margin-bottom: 10px;
+
         }
 
         .card {
             background: #202024;
-            padding: 10px;
+            padding: 20px;
             border: 10px solid #121214;
             border-radius: 15px;
             text-align: center;
@@ -104,7 +106,7 @@
             width: 100%;
             max-width: 400px;
             border-radius: 6px;
-            margin-bottom: 5px;
+            margin-bottom: 15px;
         }
 
         .card h3 {
@@ -227,22 +229,31 @@
 
 
         <div class="content">
-            <div class="swipe-indicator">
+            <!-- <div class="swipe-indicator">
                 Arraste para o lado
                 <div class="scrollme"></div>
             </div>
-
+ -->
             <div id="slider" class="swipe">
                 <div class="swipe-wrap">
                     <div class="card">
+                        <img src="img/curso-fullstack-danki.png">
+                        <h3>Super Bônus - Danki Code</h3>
+                        <p>
+                            Inscreva-se no curso e ganhe um bônus de <strong>Suporte Técnico</strong> e <strong>Mentoria
+                                de Carreira</strong> comigo.
+                        </p>
+                        <a target="_blank" href="https://go.hotmart.com/W40709155B?ap=6e96" class="btn-more">Saiba mais</a>
+                    </div>
+                   <!--  <div class="card">
                         <img src="img/curso-fullstack-programadorbr.PNG">
-                        <h3>Super Bônus</h3>
+                        <h3>Super Bônus - ProgramadorBr</h3>
                         <p>
                             Inscreva-se no curso e ganhe um bônus de <strong>Suporte Técnico</strong> e <strong>Mentoria
                                 de Carreira</strong> comigo.
                         </p>
                         <a target="_blank" href="https://go.hotmart.com/L40711839H" class="btn-more">Saiba mais</a>
-                    </div>
+                    </div> -->
                     <div class="card">
                         <img src="img/lista-vip.png">
                         <h3>Lista Vip - Thiago Medeiros</h3>
@@ -285,13 +296,10 @@
         <a target="_blank" href="https://github.com/thiagommedeiros">
             <img src="img/github.svg" alt="Github">
         </a>
-        <a target="_blank" href="https://wa.me/351910071326">
-            <img src="img/whatsapp.png" alt="Whatsapp">
-        </a>
     </div>
 
 
-    <script src="js/swipe.js"></script>
+    <!-- <script src="js/swipe.js"></script>
     <script>
         window.mySwipe = new Swipe(document.getElementById('slider'), {
             startSlide: 0,
@@ -305,7 +313,7 @@
             callback: function (index, elem, dir) { },
             transitionEnd: function (index, elem) { }
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
