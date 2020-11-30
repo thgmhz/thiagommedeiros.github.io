@@ -21,6 +21,55 @@
   <!-- Custom styles for this template -->
   <link href="css/landing-page.css" rel="stylesheet">
 
+  <style>
+      .container-aula {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+    }
+    .iframe-aula {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .video-section {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    #saber-mais {
+        max-width: 500px;
+        width: 100%;
+        background: #ec0000;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 14px;
+        font-size: 2em;
+        margin: 50px auto;
+        display: inline-block;
+       
+    }
+
+    #saber-mais:hover {
+        cursor: pointer;
+        background-color: #a00000;
+    }
+
+    @media (max-width: 540px) {
+      #saber-mais {
+        font-size: 1.5em;
+      }
+    }
+
+    .red {
+      color: red;
+    }
+  </style>
 </head>
 
 <body>
@@ -33,77 +82,48 @@
   </nav> -->
 
   <!-- Masthead -->
-  <header class="masthead text-white text-center">
+  <header class="masthead obrigado text-white text-center">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h1 class="mb-2">Treinamento Gratuito</h1>
-          <h2 class="mb-5">Desenvolvimento web - HTML, CSS e JavaScript</h2>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form id="sib-form" method="POST" action="https://9f79627c.sibforms.com/serve/MUIEAPdYvsKsWnuCndtiP_cq2J0J-GMpceEb07rR6M3F2ESUKA9CRedkb50tnCI1bpe-6q3sDRMOP9zQ1a7yB-c0NnwhTe0lS1S7kjmaR8qKtKGEe3acoH69KTXztYKIX3_dCZr5ygaV1nK6wC7D4P4_o5h6e7CuYdXfkJAc4rqnKLLbQ1Yne-z8bKu0dO7k_lVtBNAhIwacS5u-">
-            <div class="form-row">
-              <div class="col-10 mx-auto mb-2">
-                <input class="form-control form-control-lg" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Seu melhor e-mail" data-required="true" required />
-                <input type="hidden" name="locale" value="pt">
-                <input type="hidden" name="html_type" value="simple">
-              </div>
-              <div class="col-10  mx-auto">
-                <button type="submit" class="btn btn-block btn-lg btn-primary" id="mc-embedded-subscribe" >Quero receber!</button>
-              </div>
-            </div>
-          </form>
+        <div class="col-12 mx-auto">
+          <img src="img/logo.png" class="mb-4" alt="Workshop" width="120">
+          <h1 class="mb-2">INCRIÇÃO REALIZADA COM SUCESSO!</h1>
+          <h2 class="mb-3">Em <span class="red">5 minutos</span> o acesso ao Workshop chegará em seu e-mail.</h2>
+          <p>Verifique se o e-mail não caiu na caixa de Spam ou Promoções.</p>
         </div>
       </div>
     </div>
   </header>
 
   <!-- Icons Grid -->
-  <section class="features-icons bg-light text-center">
+  <section class="video-section bg-light text-center">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="fas fa-code  m-auto text-primary"></i>
+        <div class="col-12">
+            <h3>Enquanto isso assita o vídeo abaixo:</h3>
+            <br>
+            <div class="container-aula">
+                <iframe class="iframe-aula" src="https://player.vimeo.com/video/409842867" frameborder="0" allow="fullscreen; control" allowfullscreen="" data-ready="true"></iframe>
             </div>
-            <h3>Aulas práticas</h3>
-            <p class="lead mb-0">Aprenda as bases para o desenvolvimento web: HTML, CSS e JavaScript.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="fas fa-laptop-code  m-auto text-primary"></i>
-            </div>
-            <h3>Aulas rápidas</h3>
-            <p class="lead mb-0">Sem enrolação, direto ao ponto, explicações simples e objetivas. Você vai desenvolver um simples cadastro de tarefas.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="fas fa-user  m-auto text-primary"></i>
-            </div>
-            <h3>Descubra</h3>
-            <p class="lead mb-0">Feito para te ajudar a descobrir se você tem aptidão para programação, antes de investir num curso completo.</p>
-          </div>
+            <a href="https://go.hotmart.com/L40711839H?src=paginaObrigado" id="saber-mais">
+                Quero saber mais!
+            </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Image Showcases -->
+  <!-- Image Showcases 
   <section class="showcase">
     <div class="container-fluid p-0">
-      <!-- <div class="row no-gutters">
+      <div class="row no-gutters">
         <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
           <h2>Fully Responsive Design</h2>
           <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
         </div>
-      </div> -->
+      </div>
       <div class="row no-gutters">
         <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
         <div class="col-lg-6 my-auto showcase-text">
@@ -124,6 +144,8 @@
       </div>
     </div>
   </section>
+
+  -->
 
   <!-- Testimonials -->
 <!--   <section class="testimonials text-center bg-light">
@@ -155,7 +177,7 @@
     </div>
   </section> -->
 
-  <!-- Call to Action -->
+  <!-- Call to Action 
   <section class="call-to-action text-white text-center">
     <div class="overlay"></div>
     <div class="container">
@@ -179,10 +201,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
-  <!-- Footer -->
-  <footer class="footer bg-light">
+  <!-- Footer 
+  <footer class="footer bg-white">
     <div class="container">
       <div class="row">
         
@@ -208,12 +230,21 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer>-->
+  
 
-  <!-- Bootstrap core JavaScript -->
+  <!-- Bootstrap core JavaScript 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+-->
 
+    <script>
+        setTimeout(() => {
+            document.querySelector('#saber-mais').style.visibility = 'initial'
+        }, 40000)
+
+        
+    </script>
 </body>
 
 </html>

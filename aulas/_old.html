@@ -724,15 +724,14 @@
 
     const showBody = () => document.querySelector('body').classList.add('visible')
 
-    if (hasLocalStorageData) {
+    if (!hasLocalStorageData) {
       showBody()
     } else {
       const urlParams = new URLSearchParams(window.location.search)
       const t = urlParams.get('t')
-      console.log('ok', t)
       if (t === '1') {
         window.localStorage.setItem(storageKey, storageValue)
-        showBody()
+        window.location.href = 'https://thiagommedeiros.github.io/treinamento/'
       } else {
         window.location.href = 'https://thiagommedeiros.github.io/treinamento-inscricao/'      
       }

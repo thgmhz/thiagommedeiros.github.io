@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f8f9fa;
 }
 
 h1,
@@ -21,11 +22,14 @@ h6 {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url('../img/bg-code.jpg') no-repeat center center;
+  background: url('../img/bg-code-2.jpg') no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  border-radius: 0 0 100px 0;
+  box-shadow: 0px 3px 6px rgb(168, 168, 168);
 }
+
 
 header.masthead .overlay {
   position: absolute;
@@ -35,6 +39,7 @@ header.masthead .overlay {
   top: 0;
   left: 0;
   opacity: 0.6;
+  border-radius: 0 0 100px 0;
 }
 
 header.masthead h1 {
