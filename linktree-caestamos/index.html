@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Raleway:wght@600&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+    }
+    
+    body {
+      background: url(bg.png);
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 20px;
+      font-family: 'Raleway', sans-serif;
+      color: white;
+      margin: 0;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    h2 {
+      margin: 10px 0;
+    }
+
+    .photo {
+      width: 80px;
+      border-radius: 100%;
+      border: 3px solid white;
+      box-shadow: 0 0 15px rgb(255, 255, 255);
+      margin-bottom: 10px
+    }
+
+    .name, .skill {
+      display: inline-block;
+      text-align: center;
+    }
+    
+    .name {
+      font-size: 24px;
+      font-family: 'Architects Daughter', cursive;
+    }
+
+    .skill {
+      font-size: 16px;
+      font-weight: 100;
+    }
+
+    .social {
+      
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin: 30px 0;
+      max-width: 500px;
+    }
+
+    .social img {
+      width: 33px;
+    }
+    
+    .buttons {
+      display: block;
+      background: rgb(255, 255, 255);
+      padding: 14px 20px;
+      border-radius: 6px;
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      text-decoration: none;
+      margin-bottom: 6px;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .buttons:hover, .buttons:active, .active{
+      box-shadow: 0 0 20px white;
+      color:#364dcc;
+    }
+
+    .buttons span {
+      display: block;
+      margin: 5px 0 0;
+      color: rgb(138, 138, 138);
+      font-size: 14px;
+    }
+
+    .shake {
+      display: block;
+      animation: shake 1s infinite;
+    }
+    
+    .active {
+      margin-bottom: 8px;
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translate(0px, 0px) rotate(0deg);
+      }
+      25% {
+        transform: translate(1px, 1px) rotate(1deg);
+      }
+      50% {
+        transform: translate(0px, 0px) rotate(0deg);
+      }
+      75% {
+        transform: translate(2px, -1px) rotate(1deg);
+      }
+      100% {
+        transform: translate(0px, 0px) rotate(0deg);
+      }
+    }
+  </style>
+</head>
+<body class="header-hero bg_ccaraover">
+
+  <img src="logo.png" alt="Logo Canal Cá Estamos" style="margin:30px;">
+
+  <a href="https://www.youtube.com/c/CanalCaEstamos" target="_blank" class="buttons">
+    Youtube - Canal Cá Estamos
+    <span>Canal onde compartilhamos nossas experiências vivendo em Portugal.</span>
+  </a>
+  <a href="https://t.me/morar_em_portugal" target="_blank" class="buttons">
+    Grupo no Telegram - Morar em Portugal
+    <span>Grupo para troca de informações sobre Morar em Portugal.</span>
+  </a>
+  <a href="http://bit.ly/34Qp9Wc" target="_blank" class="buttons">
+    Método Morar em Portugal
+    <span>Guia completo com todas informações que você precisa para morar em Portugal. Recomendamos muito!</span>
+  </a>
+  <a href="https://thiago-medeiros.com/workshop/primeiros-passos-programacao-web/inscricao" target="_blank" class="buttons">
+    Workshop - Primeiros Passos com Programação Web
+    <span>Faça esse workshop para dar seus primeiros passos com Programação Web.</span>
+  </a>  
+  
+
+</body>
+</html>
