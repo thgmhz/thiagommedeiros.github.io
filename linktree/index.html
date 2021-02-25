@@ -1,320 +1,151 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thiago Medeiros - Links</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thiago Medeiros - Links</title>
 
-    <link rel="preload" as="font" href="/fonts/roboto-400.woff2" type="font/woff2" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/cf931d45f2.js" crossorigin="anonymous"></script>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+	<link rel="stylesheet" href="css/style.css">
 
-        body {
-            background: #121214;
-            font-family: 'Roboto', sans-serif;
-            color: #e1e1e6;
-            padding: 5px 5px 0 5px;
-        }
-
-        .container {
-            position: relative;
-            max-width: 500px;
-            margin: 0 auto;
-            padding-bottom: 70px;
-        }
-
-        .profile {
-            justify-content: flex-start;
-            display: flex;
-            align-items: center;
-            margin-top: 15px;
-            margin-left: 15px;
-        }
-
-        .photo {
-            width: 60px;
-            border-radius: 100%;
-            margin-bottom: 10px
-        }
-
-        .name {
-            display: inline-block;
-            margin-left: 12px;
-            font-size: 18px;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .skill {
-            font-size: 11px;
-            font-weight: 100;
-        }
-
-        .social {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            padding: 10px 0;
-            z-index: 10;
-            background: rgb(255, 255, 255);
-            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 100%);
-        }
-
-        .social img {
-            width: 33px;
-        }
-
-        .swipe {
-            overflow: hidden;
-            /* visibility: hidden; */
-            position: relative;
-        }
-
-        .swipe-wrap {
-            overflow: hidden;
-            position: relative;
-
-        }
-
-        .swipe-wrap>div {
-            /* float: left; */
-            width: 100%;
-            position: relative;
-            overflow: hidden;
-            margin-bottom: 10px;
-
-        }
-
-        .card {
-            background: #202024;
-            padding: 20px;
-            border: 10px solid #121214;
-            border-radius: 15px;
-            text-align: center;
-        }
-
-        .card img {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 6px;
-            margin-bottom: 15px;
-        }
-
-        .card h3 {
-            text-align: left;
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            text-align: left;
-            font-size: 16px;
-        }
-
-        .card .btn-more {
-            display: block;
-            text-decoration: none;
-            outline: none;
-            padding: 10px 20px;
-            background: #0095f6;
-            color: white;
-            border-radius: 6px;
-            margin-top: 14px;
-            font-size: 12px;
-        }
-
-        .swipe-indicator {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            font-size: 10px;
-            color: #636363;
-            border-radius: 3px;
-        }
-
-        @keyframes pulsea {
-            0%,
-            80%,
-            100% {
-                text-shadow:
-                    0pt 0px 0px rgba(255, 255, 255, 0),
-                    10pt 0px 0px rgba(255, 255, 255, 0),
-                    20pt 0px 0px rgba(255, 255, 255, 0);
-            }
-
-            10% {
-                text-shadow:
-                    0pt 0px 0px rgba(255, 255, 255, 0.5),
-                    10pt 0px 0px rgba(255, 255, 255, 0),
-                    20pt 0px 0px rgba(255, 255, 255, 0);
-            }
-
-            20% {
-                text-shadow:
-                    0pt 0px 0px rgba(255, 255, 255, 1),
-                    10pt 0px 0px rgba(255, 255, 255, 0),
-                    20pt 0px 0px rgba(255, 255, 255, 0);
-            }
-
-            30% {
-                text-shadow:
-                    0pt 0px 0px rgba(255, 255, 255, 0.5),
-                    10pt 0px 0px rgba(255, 255, 255, 0.5),
-                    20pt 0px 0px rgba(255, 255, 255, 0);
-            }
-
-            40% {
-                text-shadow:
-                    0pt 0px 0px rgba(255, 255, 255, 0),
-                    10pt 0px 0px rgba(255, 255, 255, 1),
-                    20pt 0px 0px rgba(255, 255, 255, 0);
-            }
-
-            50% {
-                text-shadow:
-                    0pt 0px 0px rgba(255, 255, 255, 0),
-                    10pt 0px 0px rgba(255, 255, 255, 0.5),
-                    20pt 0px 0px rgba(255, 255, 255, 0.5);
-            }
-
-            60% {
-                text-shadow:
-                    0pt 0px 0px rgba(255, 255, 255, 0),
-                    10pt 0px 0px rgba(255, 255, 255, 0),
-                    20pt 0px 0px rgba(255, 255, 255, 1);
-            }
-
-            70% {
-                text-shadow:
-                    0pt 0px 0px rgba(255, 255, 255, 0),
-                    10pt 0px 0px rgba(255, 255, 255, 0),
-                    20pt 0px 0px rgba(255, 255, 255, 0.5);
-            }
-        }
-
-        .scrollme::after {
-            margin-left: 10px;
-            margin-right: 40px;
-            animation: pulsea 2s linear infinite;
-            font-size: 12px;
-            color: transparent;
-            font-family: FontAwesome;
-            content: "\f105";
-            text-shadow:
-                0pt 0px 0px rgba(255, 255, 255, 1),
-                10pt 0px 0px rgba(255, 255, 255, 1),
-                20pt 0px 0px rgba(255, 255, 255, 1);
-        }
-    </style>
+	<!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '201552024992353');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=201552024992353&ev=PageView&noscript=1"
+  /></noscript>
+  <script>
+    fbq('trackCustom', 'viewLinktree')
+  </script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="profile">
-            <img src="img/thiago.jpg" alt="Foto: Thiago" class="photo">
-            <span class="name">
-                Thiago Medeiros<br>
-                <span class="skill">Engenheiro de Software | Instrutor</span>
-            </span>
-        </div>
+	<div class="container">
+		<div class="profile">
+			<img src="img/thiago-medeiros.png" alt="Foto: Thiago" class="photo">
+			<span class="name">Thiago Medeiros</span>
+			<span class="skill">Engenheiro de Software | Instrutor</span>
+		</div>
 
+	<div class="highlight">
+		<img class="logo-course" src="img/logo.png" alt="Logo: Formação Full Stack Javascript">
+		<iframe class="video" src="https://www.youtube.com/embed/YBrGkiBzsTU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>			
 
-        <div class="content">
-            <!-- <div class="swipe-indicator">
-                Arraste para o lado
-                <div class="scrollme"></div>
-            </div>
- -->
-            <div id="slider" class="swipe">
-                <div class="swipe-wrap">
-                    <div class="card">
-                        <img src="img/workshop-gratuito.png">
-                        <h3>Atenção!</h3>
-                        <p>
-                            Faça esse Workshop Online antes de investir em um curso completo! Eu vou te ajudar a descobrir se você tem aptidão para seguir nessa carreira :)
-                        </p>
-                        <a target="_blank" href="https://thiago-medeiros.com/workshop/primeiros-passos-programacao-web/inscricao" class="btn-more">Saiba mais</a>
-                    </div>  
+		<a target="_blank" href="https://go.hotmart.com/D40738870L/?src=linktree">
+			Clique aqui e saiba mais		
+		</a>
+	</div>
 
-                    <!-- <div class="card">
-                        <img src="img/curso-fullstack-programadorbr.PNG">
-                        <h3>Super Bônus - ProgramadorBr</h3>
-                        <p>
-                            Inscreva-se no curso e ganhe um bônus de <strong>Suporte Técnico</strong> e <strong>Mentoria
-                                de Carreira</strong> comigo.
-                        </p>
-                        <a target="_blank" href="https://go.hotmart.com/L40711839H" class="btn-more">Saiba mais</a>
-                    </div>  -->                   
-                   
-                    <div class="card">
-                        <img src="img/lista-vip.png">
-                        <h3>Lista Vip - Thiago Medeiros</h3>
-                        <p>
-                            Conteúdos exclusivos sobre tecnologia e programação no Telegram pra vc se manter antenado :)
-                        </p>
-                        <a target="_blank" href="https://t.me/lista_vip_thiago" class="btn-more">Participar</a>
-                    </div>
-                    <div class="card">
-                        <img src="img/fale-comigo.png">
-                        <h3>Whatsapp</h3>
-                        <p>
-                            Apenas para dúvidas relacionadas ao curso, suporte e mentoria.
-                        </p>
-                        <a target="_blank" href="https://wa.me/351910071326" class="btn-more">Chamar</a>
-                    </div>
-                    <div class="card">
-                        <img src="img/ca-estamos.png">
-                        <h3>Canal Cá Estamos</h3>
-                        <p>
-                            Meu canal de vlogs sobre morar em Portugal.
-                        </p>
-                        <a target="_blank" href="https://www.youtube.com/channel/UCswxTAwZyxGHR6nlYcecIkA" class="btn-more">Acessar</a>
-                    </div>
-                </div>
-            </div>
-        </div>        
-    </div>
+		<h2>Meus links:</h2>
 
-    <div class="social">
-        <a target="_blank" href="https://www.youtube.com/user/thiagomunhozmedeiros">
-            <img src="img/youtube.png" alt="Youtube">
-        </a>
-        <a target="_blank" href="https://m.instagram.com/thiagomunhozmedeiros/">
-            <img src="img/insta.svg" alt="Instagram">
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/tmunhoz/">
-            <img src="img/linkedin.svg" alt="Linkedin">
-        </a>
-        <a target="_blank" href="https://github.com/thiagommedeiros">
-            <img src="img/github.svg" alt="Github">
-        </a>
-    </div>
+		<div class="cards">
+			<a class="card purple" target="_blank" href="https://thiago-medeiros.com/workshop/primeiros-passos-programacao-web/inscricao/?src=linktree">
+				<i class="fas fa-code fa-2x"></i>
+				<div class="info">
+					<h3>Workshop Gratuito</h3>
+					<p>Dê seus primeiros passos com programação web</p>
+				</div>
+			</a>
 
+			<a class="card purple" target="_blank" href="https://thiago-medeiros.com/workshop/primeiros-passos-programacao-web/inscricao/?src=linktree">
+				<i class="fas fa-laptop-code fa-2x"></i>
+				<div class="info">
+					<h3>Formação Full Stack Javascript</h3>
+					<p>Curso completo voltado para iniciantes, do zero ao mercado!</p>
+				</div>
+			</a>
 
-    <!-- <script src="js/swipe.js"></script>
-    <script>
-        window.mySwipe = new Swipe(document.getElementById('slider'), {
-            startSlide: 0,
-            speed: 200,
-            //auto: 5000,
-            draggable: false,
-            continuous: true,
-            disableScroll: false,
-            stopPropagation: false,
-            ignore: ".scroller",
-            callback: function (index, elem, dir) { },
-            transitionEnd: function (index, elem) { }
-        });
-    </script> -->
+			<a class="card blog" target="_blank" href="https://thiago-medeiros.com/?src=linktree">
+				<i class="fab fa-facebook-f fa-2x"></i>			
+				<div class="info">
+					<h3>Página no Facebook</h3>
+					<p>Conteúdos sobre tecnologia, programação e carreira.</p>
+				</div>
+			</a>
+
+			<a class="card blog" target="_blank" href="https://thiago-medeiros.com/?src=linktree">
+				<i class="fab fa-wordpress fa-2x"></i>		
+				<div class="info">
+					<h3>Blog Pessoal</h3>
+					<p>Conteúdos sobre tecnologia, programação e carreira.</p>
+				</div>
+			</a>					
+			
+			<a class="card telegram" target="_blank" href="https://t.me/lista_vip_thiago">
+				<i class="fab fa-telegram fa-2x"></i>			
+				<div class="info">
+					<h3>Developers 👓</h3>
+					<p>Grupo no Telegram sobre tecnologia e programação.</p>
+				</div>
+			</a>
+
+			<a class="card telegram" target="_blank" href="https://t.me/morar_em_portugal">
+				<i class="fab fa-telegram fa-2x"></i>			
+				<div class="info">
+					<h3>Morar em Portugal</h3>
+					<p>Grupo no Telegram sobre Morar em Portugal.</p>
+				</div>
+			</a>			
+		
+			<a class="card youtube" target="_blank" href="https://www.youtube.com/channel/UCfOSO6a3t7_d6391UEjXVGA">
+				<i class="fab fa-youtube fa-2x"></i>			
+				<div class="info">
+					<h3>Canal Thiago Medeiros</h3>
+					<p>Meu canal sobre programação (em breve).</p>
+				</div>	
+			</a>
+
+			<a class="card youtube" target="_blank" href="https://www.youtube.com/channel/UCswxTAwZyxGHR6nlYcecIkA">
+				<i class="fab fa-youtube fa-2x"></i>			
+				<div class="info">
+					<h3>Canal Cá Estamos</h3>
+					<p>Vlogs sobre morar em Portugal.</p>
+				</div>				
+			</a>
+
+			<a class="card linkedin" target="_blank" href="https://www.linkedin.com/in/tmunhoz/">
+				<i class="fab fa-linkedin fa-2x"></i>			
+				<div class="info">
+					<h3>LinkedIn</h3>
+					<p>Meu perfil, currículo, etc.</p>
+				</div>
+			</a>
+
+			<a class="card github" target="_blank" href="https://github.com/thiagommedeiros">
+				<i class="fab fa-github fa-2x"></i>			
+				<div class="info">
+					<h3>Github</h3>
+					<p>Meus projetos open-source, experimentos, etc.</p>
+				</div>
+			</a>
+
+			<a class="card whats" target="_blank" href="https://wa.me/351910071326">
+				<i class="fab fa-whatsapp fa-2x"></i>			
+				<div class="info">
+					<h3>Whatsapp</h3>
+					<p>Fale comigo no whats.</p>
+				</div>
+			</a>
+
+			
+
+		</div>
+	</div>
+
 </body>
 
 </html>
