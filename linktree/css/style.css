@@ -29,12 +29,12 @@ body {
   text-align: center;
 }
 
-.profile:after {
+.profile:before {
   content: '';
   display: block;
   width: 80%;
   height: 1px;
-  background: #1b1b1b;
+  background: #051230;
   margin: 30px auto;
 }
 
