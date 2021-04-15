@@ -13,6 +13,7 @@ body {
   background-size: cover;
   background-position: bottom center;
   background-color: black;
+  background-attachment: fixed;
   font-size: 16px;
 }
 
@@ -29,7 +30,7 @@ body {
   text-align: center;
 }
 
-.profile:before {
+.profile:after {
   content: '';
   display: block;
   width: 80%;
