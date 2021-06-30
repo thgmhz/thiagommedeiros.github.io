@@ -8,11 +8,11 @@
 
 body {
   color: white;
-  background-image: url(../img/bg1.jpg);
+  background-image: url(background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  background-color: black;
+  background-color: #1c022f;
   background-attachment: fixed;
   font-size: 16px;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 .profile {
-  margin: 30px 0 25px 0;
+  margin: 30px 0;
   text-align: center;
 }
 
@@ -34,7 +34,7 @@ body {
 .profile .photo {
   width: 100px;
   border-radius: 50%;
-  border: 2px solid #2a2a2a;
+  border: 2px solid #ffffff;
   display: block;
   margin: 0 auto 20px auto;
   -webkit-animation: floating 2s ease-in-out infinite;
@@ -42,8 +42,9 @@ body {
 }
 
 .profile .name {
-  font-size: 1.5em;
+  font-size: 1.6em;
   display: block;
+  font-family: "Architects Daughter", sans-serif;
 }
 
 .profile .skill {

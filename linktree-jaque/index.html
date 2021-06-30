@@ -1,153 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+  <meta http-equiv="cache-control" content="no-cache"/>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meus links</title>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Raleway:wght@600&display=swap" rel="stylesheet">
-  <style>
-    html, body {
-      height: 100%;
-    }
-    
-    body {
-      background: #364dcc;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 10px 20px;
-      font-family: 'Raleway', sans-serif;
-      color: white;
-      margin: 0;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-    h2 {
-      margin: 10px 0;
-    }
-
-    .photo {
-      width: 80px;
-      border-radius: 100%;
-      border: 3px solid white;
-      box-shadow: 0 0 15px rgb(255, 255, 255);
-      margin-bottom: 10px
-    }
-
-    .name, .skill {
-      display: inline-block;
-      text-align: center;
-    }
-    
-    .name {
-      color: black;
-      font-size: 24px;
-      font-family: 'Architects Daughter', cursive;
-      margin-bottom: 30px;
-    }
-
-    .skill {
-      font-size: 16px;
-      font-weight: 100;
-    }
-
-    .social {
-      display: flex;
-      margin: 30px 0;
-      max-width: 500px;
-    }
-
-    .social img {
-      width: 33px;
-      margin: 0 19px;
-      fill: white;
-    }
-    
-    .buttons {
-      display: block;
-      background: rgb(255, 255, 255);
-      padding: 14px 20px;
-      border-radius: 6px;
-      color: rgb(0, 0, 0);
-      font-size: 16px;
-      text-decoration: none;
-      margin-bottom: 8px;
-      width: 90%;
-      max-width: 500px;
-    }
-
-    .buttons:hover, .buttons:active, .active{
-      box-shadow: 0 0 20px white;
-      color:#364dcc;
-    }
-
-    .buttons span {
-      display: block;
-      margin: 5px 0 0;
-      color: rgb(138, 138, 138);
-      font-size: 14px;
-    }
-
-    .shake {
-      display: block;
-      animation: shake 1s infinite;
-    }
-
-    @keyframes shake {
-      0% {
-        transform: translate(0px, 0px) rotate(0deg);
-      }
-      25% {
-        transform: translate(1px, 1px) rotate(1deg);
-      }
-      50% {
-        transform: translate(0px, 0px) rotate(0deg);
-      }
-      75% {
-        transform: translate(2px, -1px) rotate(1deg);
-      }
-      100% {
-        transform: translate(0px, 0px) rotate(0deg);
-      }
-    }
-  </style>
+  <script src="https://kit.fontawesome.com/cf931d45f2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="header-hero bg_cover" style="background-image: url(background.png)">
+<body class="header-hero bg_cover">
 
-  <img src="jaque.jpg" alt="Foto: Jaqueline" class="photo">
-  <span class="name">Jaqueline Moreira</span>
-  <span class="skill"></span>
+  <div class="container">
+		<div class="profile">
+      <img src="jaque.jpg" alt="Foto: Jaqueline" class="photo">
+			<span class="name">Jaqueline Moreira</span>
+			<!--<span class="skill">Full Stack Developer | Instrutor</span>-->
+		</div>
 
-  <!-- <div class="social">
-    <a target="_blank" href="https://m.instagram.com/jaquelinemmmedeiros/">
-      <img src="insta.svg" alt="Instagram">
-    </a>
-    <a target="_blank" href="https://wa.me/351960262110">
-      <img src="whatsapp.png" alt="Whatsapp" style="width: 37px">
-    </a>
-    <a target="_blank" href="https://www.youtube.com/channel/UCswxTAwZyxGHR6nlYcecIkA">
-      <img src="youtube.png" alt="Youtube">
-    </a>
-  </div> -->
 
-  <a href="https://m.instagram.com/jm.patchwork" target="_blank" class="buttons">
-    Ateliê JM Patchwork
-    <span>Costura criativa e bordado sob encomenda.</span>
+  <a class="card purple" target="_blank" href="https://m.instagram.com/jm.patchwork">
+    <i class="fas fa-vest-patches fa-2x"></i>
+    <div class="info">
+      <h3>Ateliê JM Patchwork</h3>
+      <p>Costura criativa e bordado sob encomenda.</p>
+    </div>
   </a>
-  <a href="https://www.instagram.com/jaquelinemnails" target="_blank" class="buttons">
-    JM Nails
-    <span>Dicas e técnicas de manicure.</span>
+
+  <a class="card purple" target="_blank" href="https://wa.me/351960262110">
+    <i class="fab fa-whatsapp fa-2x"></i>
+    <div class="info">
+      <h3>Whatsapp</h3>
+      <p>Somente para encomendas.</p>
+    </div>
   </a>
-  <a href="https://wa.me/351960262110" target="_blank" class="buttons">
-    Whatsapp
-    <span>Clique para falar comigo.</span>
+
+  <a class="card purple" target="_blank" href="https://www.youtube.com/channel/UCswxTAwZyxGHR6nlYcecIkA">
+    <i class="fab fa-youtube fa-2x"></i>
+    <div class="info">
+      <h3>Canal Cá Estamos</h3>
+      <p>Vlogs sobre viver em Portugal.</p>
+    </div>
   </a>
-  <a href="https://www.youtube.com/channel/UCswxTAwZyxGHR6nlYcecIkA" target="_blank" class="buttons">
-    Canal Cá Estamos
-    <span>Vlogs sobre viver em Portugal.</span>
-  </a>
+
   
 </body>
 </html>
