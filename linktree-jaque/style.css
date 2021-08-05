@@ -34,7 +34,6 @@ body {
 .profile .photo {
   width: 100px;
   border-radius: 50%;
-  border: 2px solid #ffffff;
   display: block;
   margin: 0 auto 20px auto;
   -webkit-animation: floating 2s ease-in-out infinite;
