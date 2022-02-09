@@ -3,12 +3,11 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Sora', sans-serif;
 }
 
 body {
   color: white;
-  background-image: url(../img/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -21,7 +20,7 @@ body {
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 33px;
 
 }
 
@@ -32,17 +31,17 @@ body {
 
 
 .profile .photo {
-  width: 100px;
+  width: 140px;
   border-radius: 50%;
-  border: 2px solid #2a2a2a;
+  border: 4px solid #2e002b;
   display: block;
   margin: 0 auto 20px auto;
-  -webkit-animation: floating 2s ease-in-out infinite;
-  animation: floating 2s ease-in-out infinite;
 }
 
 .profile .name {
-  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5em;
   display: block;
 }
 
@@ -101,12 +100,22 @@ h2 {
   align-items: center;
   width: 100%;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 33px;
   border-radius: 6px;
   color: white;
   text-decoration: none;
-  background: rgb(29,75,102);
-  background: linear-gradient(180deg, rgba(29,75,102,1) 44%, rgba(19,42,67,1) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 5px;
+  border: 1px solid;
+  border-image: linear-gradient(
+90deg
+,#F2298200,#F22982,#F2298200) 1;
+  border-left: 0;
+  border-bottom: 0;
+  border-right: 0;
+  background-color: #161616;
+  transition: all 0.5s ease;
 }
 
 .card .info {
@@ -114,41 +123,30 @@ h2 {
 }
 
 .card .info h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   text-align: left;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .card .info p {
-  font-size: 0.8em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  font-weight: 100;
 }
 
 .card i {
   margin-right: 15px;
 }
 
-.purple {
-  background: linear-gradient(180deg, #7f22f9 50%, #541d9c 100%);
+.card:hover, .card:active {
+  background-color: white;
+  color: black;
 }
 
-.curso {
-  background: linear-gradient(183deg, #2d22f9 50%, #191196 100%)
-}
 
-.blog {
-  background: linear-gradient(180deg, #227af9 50%, #0c3775 100%);
-}
 
-.whats {
-  background: linear-gradient(180deg, rgb(35 199 86) 50%, rgb(16 101 40) 100%)
-}
 
-.telegram {
-  background: linear-gradient(180deg, #0eaff9 50%, #106290 100%)
-}
-
-.youtube {
-  background: linear-gradient(180deg, #ff2222 50%, #8a1f1f 100%);
-}
 
 
 
